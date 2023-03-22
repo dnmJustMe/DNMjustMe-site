@@ -35,7 +35,6 @@
  *
  * ------------------------------------------------------------------- 
  */
-@import url("fonts.css");
 @import url("font-awesome/css/font-awesome.min.css");
 @import url("micons/micons.css");
 
@@ -46,6 +45,18 @@
  *
  * ------------------------------------------------------------------- 
  */
+ @font-face {
+    font-family: "ubuntu";
+    src: url("ubuntu-font/Ubuntu-Regular.eot") format("eot");
+    src: url("ubuntu-font/Ubuntu-Regular.ttf") format("ttf");
+    src: url("ubuntu-font/Ubuntu-Regular.woff") format("woff");
+    src: url("ubuntu-font/Ubuntu-Regular.woff2") format("woff2")
+}
+
+* {
+    font-family: "ubuntu", sans-serif;
+}
+
 :root{
 	--color_verde: #1f7f15;
 	--color_verde_1: #1f7f15
@@ -76,7 +87,7 @@ html, body {
 }
 body {
 	background: #151515;
-	font-family: "lora-regular", serif;
+	font-family: "ubuntu", serif;
 	font-size: 1.7rem;
 	line-height: 3rem;
 	color: #6e6e6e;
@@ -106,7 +117,7 @@ a:hover, a:focus, a:active {
  * ------------------------------------------------------------------- 
  */
 h1, h2, h3, h4, h5, h6, .h01, .h02, .h03, .h04, .h05, .h06 {
-	font-family: "poppins-semibold", sans-serif;
+	font-family: "ubuntu", sans-serif;
 	color: #313131;
 	font-style: normal;
 	text-rendering: optimizeLegibility;
@@ -116,7 +127,7 @@ h3, .h03, h4, .h04 {
 	margin-bottom: 1.8rem;
 }
 h5, .h05, h6, .h06 {
-	font-family: "poppins-bold";
+	font-family: "ubuntu;
 	margin-bottom: 1.2rem;
 }
 h1, .h01 {
@@ -158,7 +169,7 @@ p img {
 	margin: 0;
 }
 p.lead {
-	font-family: "lora-regular", serif;
+	font-family: "ubuntu", serif;
 	font-size: 2rem;
 	line-height: 1.8;
 	color: #888888;
@@ -175,10 +186,10 @@ em, i, strong, b {
 	font-weight: normal;
 }
 em, i {
-	font-family: "lora-italic", serif;
+	font-family: "ubuntu", serif;
 }
 strong, b {
-	font-family: "lora-bold", serif;
+	font-family: "ubuntu", serif;
 }
 small {
 	font-size: 1.2rem;
