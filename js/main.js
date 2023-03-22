@@ -289,39 +289,41 @@
 	});		
 
 	$('#contratar-service1').click(function () {
-		$("#contactSubject").val("")
-		$("#contactMessage").val("")
-		$("#contactSubject").attr("placeholder", "Asunto: Desarrollo web. (Presione 'Espacio' para autocompletar)")
-		$("#contactMessage").attr("placeholder", "Mensaje: Hola, me gustaría contratar sus servicios de Desarrollo web. (Presione 'Espacio' para autocompletar)")
-		$("#contactName").focus()
-		$("#contactSubject").keyup(function(event){ 
-			if(event.which == 32){
-				$("#contactSubject").val("Desarrollo web.")
-			}
-		  });
-		$("#contactMessage").keyup(function(event){ 
-			if(event.which == 32){
-				$("#contactMessage").val("Hola, me gustaría contratar sus servicios de Desarrollo web.")
-			}
-		  });
+		autocompletar("Desarrollo web")
 	})
 
 	$('#contratar-service2').click(function () {
+		autocompletar("Aplicaciones web")
+	})
+
+	$('#contratar-service3').click(function () {
+		autocompletar("Soluciones informáticas")
+	})
+
+	$('#contratar-service4').click(function () {
+		autocompletar("Soporte técnico")
+	})
+
+	$('#contratar-service5').click(function () {
+		autocompletar("Mantenimiento")
+	})
+
+	function autocompletar(campo) {
 		$("#contactSubject").val("")
 		$("#contactMessage").val("")
-		$("#contactSubject").attr("placeholder", "Asunto: Aplicaciones web. (Presione 'Espacio' para autocompletar)")
-		$("#contactMessage").attr("placeholder", "Mensaje: Hola, me gustaría contratar sus servicios de Aplicaciones web. (Presione 'Espacio' para autocompletar)")
+		$("#contactSubject").attr("placeholder", `Asunto: ${campo}. (Presione 'Espacio' para autocompletar)`)
+		$("#contactMessage").attr("placeholder", `Mensaje: Hola, me gustaría contratar sus servicios de ${campo}. (Presione 'Espacio' para autocompletar)`)
 		$("#contactName").focus()
 		$("#contactSubject").keyup(function(event){ 
 			if(event.which == 32){
-				$("#contactSubject").val("Aplicaciones web.")
+				$("#contactSubject").val(campo)
 			}
 		  });
 		$("#contactMessage").keyup(function(event){ 
 			if(event.which == 32){
-				$("#contactMessage").val("Hola, me gustaría contratar sus servicios de Aplicaciones web.")
+				$("#contactMessage").val(`Hola, me gustaría contratar sus servicios de ${campo}.`)
 			}
 		  });
-	})
+	}
 
 })(jQuery);
