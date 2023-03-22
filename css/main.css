@@ -2613,4 +2613,8 @@ footer .copyright span:last-child::after {
 	border: 3px solid var(--color_verde) !important;
 	color: #f1efef;
 }
+
+p a {
+	color:#6e6e6e;
+}
 /*# sourceMappingURL=main.css.map */
