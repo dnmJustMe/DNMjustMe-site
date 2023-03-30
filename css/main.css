@@ -35,8 +35,6 @@
  *
  * ------------------------------------------------------------------- 
  */
-@import url("font-awesome/css/font-awesome.min.css");
-@import url("micons/micons.css");
 
 
 /** 
@@ -45,13 +43,7 @@
  *
  * ------------------------------------------------------------------- 
  */
- @font-face {
-    font-family: "ubuntu";
-    src: url("ubuntu-font/Ubuntu-Regular.eot") format("eot");
-    src: url("ubuntu-font/Ubuntu-Regular.ttf") format("ttf");
-    src: url("ubuntu-font/Ubuntu-Regular.woff") format("woff");
-    src: url("ubuntu-font/Ubuntu-Regular.woff2") format("woff2")
-}
+
 
 * {
     font-family: "ubuntu", sans-serif;
@@ -576,22 +568,6 @@ select {
 }
 .ss-custom-select select::-ms-expand {
 	display: none;
-}
-.ss-custom-select::after {
-	content: '\f0d7';
-	font-family: 'FontAwesome';
-	position: absolute;
-	top: 50%;
-	right: 1.5rem;
-	margin-top: -10px;
-	bottom: auto;
-	width: 20px;
-	height: 20px;
-	line-height: 20px;
-	font-size: 18px;
-	text-align: center;
-	pointer-events: none;
-	color: #252525;
 }
 
 /* IE9 and below */
@@ -1399,16 +1375,6 @@ header .logo a {
 .intro-content .button:hover, .intro-content .button:focus {
 	border-color: var(--color_verde_1);
 }
-.intro-content .button::after {
-	display: inline-block;
-	content: "\f107";
-	font-family: fontAwesome;
-	font-size: 1.6rem;
-	line-height: inherit;
-	text-align: center;
-	position: relative;
-	left: 1.2rem;
-}
 
 .intro-social {
 	display: block;
@@ -1556,7 +1522,7 @@ header .logo a {
 	font-size: 1.5rem;
 	line-height: 3rem;
 }
-.about-content .info-list li span {
+.about-content .info-list li span, .about-content .info-list li span a{
 	display: block;
 	font-family: "poppins-regular", sans-serif;
 	color: #888888;
@@ -2543,6 +2509,14 @@ footer .footer-social li {
 footer .footer-social li a {
 	color: #FFFFFF;
 }
+
+.footer-social li a, .footer-social li a:visited {
+	color: #FFFFFF;
+}
+.footer-social li a:hover, .footer-social li a:focus {
+	color: var(--color_verde_1);
+}
+
 footer .copyright span {
 	display: inline-block;
 }
@@ -2628,4 +2602,3 @@ footer .copyright span:last-child::after {
 p a {
 	color:#6e6e6e;
 }
-/*# sourceMappingURL=main.css.map */
