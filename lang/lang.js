@@ -1,0 +1,3 @@
+const es = {
+    bienvenida : "Hola"
+}
