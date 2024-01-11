@@ -1,1025 +1,2008 @@
 <!DOCTYPE html>
 <html class="no-js" lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <title>DNMjustMe</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
 
-<head>
-  <meta charset="utf-8" />
-  <title>DNMjustMe</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="author" content="Daniel Navarro Machín" />
 
-  <meta name="author" content="Daniel Navarro Machín" />
+    <meta name="copyright" content="Daniel Navarro Machín" />
 
-  <meta name="copyright" content="Daniel Navarro Machín" />
+    <meta
+      name="description"
+      content="Sitio web, portafolio y currículum vítae de Daniel Navarro Machín."
+    />
 
-  <meta name="description" content="Sitio web, portafolio y currículum vítae de Daniel Navarro Machín.">
+    <meta property="og:locale" content="es_ES" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="DNMjustMe" />
+    <meta
+      property="og:site"
+      content="https://dnmjustme.github.io/DNMjustMe-site"
+    />
+    <meta property="og:title" content="DNMjustMe" />
+    <meta
+      property="og:description"
+      content="Sitio web, portafolio y currículum vítae de Daniel Navarro Machín."
+    />
+    <meta
+      property="og:image"
+      content="https://dnmjustme.github.io/DNMjustMe-site/images/profile-pic.jpg"
+    />
+    <meta
+      property="og:url"
+      content="https://dnmjustme.github.io/DNMjustMe-site"
+    />
 
-  <meta property="og:locale" content="es_ES" />
-  <meta property="og:type" content="website" />
-  <meta property="og:site_name" content="DNMjustMe" />
-  <meta property="og:site" content="https://dnmjustme.github.io/DNMjustMe-site" />
-  <meta property="og:title" content="DNMjustMe" />
-  <meta property="og:description" content="Sitio web, portafolio y currículum vítae de Daniel Navarro Machín." />
-  <meta property="og:image" content="https://dnmjustme.github.io/DNMjustMe-site/images/profile-pic.jpg" />
-  <meta property="og:url" content="https://dnmjustme.github.io/DNMjustMe-site" />
+    <meta
+      name="keywords"
+      content="Portafolio, curriculum, trabajo, programador web, html, css, js, php, pagina web, sitio web"
+    />
 
-  <meta name="keywords"
-    content="Portafolio, curriculum, trabajo, programador web, html, css, js, php, pagina web, sitio web">
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="upgrade-insecure-requests"
+    />
 
-  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/vendor.css" />
 
-  <link rel="stylesheet" href="css/base.css" />
-  <link rel="stylesheet" href="css/main.css" />
-  <link rel="stylesheet" href="css/vendor.css" />
+    <script src="js/modernizr.js"></script>
+    <script src="js/pace.min.js"></script>
 
-  <script src="js/modernizr.js"></script>
-  <script src="js/pace.min.js"></script>
+    <link rel="icon" type="image/png" href="favicon.jpg" />
+  </head>
 
-  <link rel="icon" type="image/png" href="favicon.jpg" />
-</head>
-
-<body id="top">
-  <!-- header 
+  <body id="top">
+    <!-- header 
    ================================================== -->
-  <header>
-    <div class="row">
-      <div class="top-bar">
-        <a class="menu-toggle" href="#"><span>Menu</span></a>
+    <header>
+      <div class="row">
+        <div class="top-bar">
+          <a class="menu-toggle" href="#"><span>Menu</span></a>
 
-        <div class="logo">
-          <a href="index.html">DNMjustMe</a>
+          <div class="logo">
+            <a href="index.html">DNMjustMe</a>
+          </div>
+
+          <nav id="main-nav-wrap">
+            <ul class="main-navigation">
+              <li class="current">
+                <a id="home-menu" class="smoothscroll" href="#intro" title=""
+                  >Inicio</a
+                >
+              </li>
+              <li>
+                <a id="about-menu" class="smoothscroll" href="#about" title=""
+                  >Sobre mi</a
+                >
+              </li>
+              <li>
+                <a id="cv-menu" class="smoothscroll" href="#resume" title=""
+                  >Currículum</a
+                >
+              </li>
+              <li>
+                <a
+                  id="portfolio-menu"
+                  class="smoothscroll"
+                  href="#portfolio"
+                  title=""
+                  >Portafolio</a
+                >
+              </li>
+              <li>
+                <a
+                  id="service-menu"
+                  class="smoothscroll"
+                  href="#services"
+                  title=""
+                  >Servicios</a
+                >
+              </li>
+              <li>
+                <a
+                  id="contact-menu"
+                  class="smoothscroll"
+                  href="#contact"
+                  title=""
+                  >Contacto</a
+                >
+              </li>
+              <li>
+                <div class="toggle-button-cover">
+                  <div id="button-3" class="button-3 r">
+                    <input
+                      id="lang_checkbox"
+                      class="checkbox"
+                      type="checkbox"
+                    />
+                    <div class="knobs"></div>
+                    <div class="layer"></div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </nav>
         </div>
+        <!-- /top-bar -->
+      </div>
+      <!-- /row -->
+    </header>
+    <!-- /header -->
 
-        <nav id="main-nav-wrap">
-          <ul class="main-navigation">
-            <li class="current">
-              <a class="smoothscroll" href="#intro" title="">Inicio</a>
-            </li>
-            <li><a class="smoothscroll" href="#about" title="">Sobre mi</a></li>
+    <!-- intro section
+   ================================================== -->
+    <section id="intro">
+      <div class="intro-overlay"></div>
+
+      <div class="intro-content">
+        <div class="row">
+          <div class="col-twelve">
+            <h5 id="hi">Hola, mundo.</h5>
+            <h1 id="presentation">Soy Daniel Navarro Machín.</h1>
+            <h2 style="opacity: 1; color: #1f7f15">(DNMjustMe)</h2>
+
+            <p class="intro-position">
+              <span id="developer">· Desarrollador Web Full Stack ·</span>
+            </p>
+
+            <a class="button stroke smoothscroll" href="#about" title="">
+              <span id="about_button">Más sobre de mi </span
+              ><svg
+                aria-hidden="true"
+                focusable="false"
+                data-prefix="fa-thin"
+                data-icon="angle-down"
+                class="svg-inline--fa fa-angle-down fa-w-12"
+                role="img"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 384 512"
+                style="height: 2.5rem; position: relative; top: 7px"
+              >
+                <path
+                  d="M191.999 352C189.999 352 188.03 351.266 186.468 349.781L34.471 205.774C31.283 202.727 31.158 197.649 34.221 194.461C37.314 191.273 42.377 191.18 45.533 194.211L191.999 332.921L338.467 194.209C341.686 191.178 346.748 191.271 349.779 194.459C352.842 197.646 352.717 202.725 349.529 205.772L197.53 349.781C195.968 351.266 193.999 352 191.999 352Z"
+                  fill="currentColor"
+                /></svg
+            ></a>
+          </div>
+        </div>
+      </div>
+      <!-- /intro-content -->
+
+      <ul class="intro-social">
+        <li>
+          <a
+            href="https://www.facebook.com/daniel.navarromachin/"
+            target="_blank"
+          >
+            <svg
+              aria-hidden="true"
+              focusable="false"
+              data-prefix="fa-brands"
+              data-icon="facebook-f"
+              class="svg-inline--fa fa-facebook-f fa-w-10"
+              role="img"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 320 512"
+              style="height: 2.5rem"
+            >
+              <path
+                d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"
+                fill="currentColor"
+              />
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="https://twitter.com/dnm_justMe" target="_blank">
+            <svg
+              aria-hidden="true"
+              focusable="false"
+              data-prefix="fa-brands"
+              data-icon="twitter"
+              class="svg-inline--fa fa-twitter fa-w-16"
+              role="img"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 512 512"
+              style="height: 2.5rem"
+            >
+              <path
+                d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"
+                fill="currentColor"
+              />
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/dnm_justme/" target="_blank">
+            <svg
+              aria-hidden="true"
+              focusable="false"
+              data-prefix="fa-brands"
+              data-icon="instagram"
+              class="svg-inline--fa fa-instagram fa-w-14"
+              role="img"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 448 512"
+              style="height: 2.5rem"
+            >
+              <path
+                d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
+                fill="currentColor"
+              />
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/dnmJustMe" target="_blank">
+            <svg
+              aria-hidden="true"
+              focusable="false"
+              data-prefix="fa-brands"
+              data-icon="github"
+              class="svg-inline--fa fa-github fa-w-15.5"
+              role="img"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 496 512"
+              style="height: 2.5rem"
+            >
+              <path
+                d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"
+                fill="currentColor"
+              />
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://api.whatsapp.com/send?phone=5355794344"
+            target="_blank"
+          >
+            <svg
+              aria-hidden="true"
+              focusable="false"
+              data-prefix="fa-brands"
+              data-icon="whatsapp"
+              class="svg-inline--fa fa-whatsapp fa-w-14"
+              role="img"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 448 512"
+              style="height: 2.5rem"
+            >
+              <path
+                d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"
+                fill="currentColor"
+              />
+            </svg>
+          </a>
+        </li>
+      </ul>
+      <!-- /intro-social -->
+    </section>
+    <!-- /intro -->
+
+    <!-- about section
+   ================================================== -->
+    <section id="about">
+      <div class="row section-intro">
+        <div class="col-twelve">
+          <h5 id="aboutMe-heading">Sobre mi</h5>
+          <h1 id="aboutMe-subHeading">Permítame introducirme.</h1>
+
+          <div class="intro-info">
+            <img src="images/profile-pic.jpg" alt="Profile Picture" />
+
+            <p id="presentation-p" class="lead">
+              Mi nombre es Daniel, soy graduado de Ingeniería Informática en la
+              Universidad de Matanzas Camilo Cienfuegos.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- /section-intro -->
+
+      <div class="row about-content">
+        <div class="col-six tab-full">
+          <h3 id="profile-heading">Perfil</h3>
+          <p id="profile-p">
+            Nacido en Cárdenas, Matanzas, Cuba. Actualmente viviendo en Máximo
+            Gómez, Perico, Matanzas, Cuba.
+          </p>
+
+          <ul class="info-list">
             <li>
-              <a class="smoothscroll" href="#resume" title="">Currículum</a>
+              <strong id="full-name-heading">Nombre completo:</strong>
+              <span>Daniel Navarro Machín</span>
             </li>
             <li>
-              <a class="smoothscroll" href="#portfolio" title="">Portafolio</a>
+              <strong id="born-date-heading">Fecha de nacimiento:</strong>
+              <span id="born-date-span">27 de junio de 1999</span>
             </li>
             <li>
-              <a class="smoothscroll" href="#services" title="">Servicios</a>
+              <strong id="ocupation-heading">Ocupación:</strong>
+              <span id="ocupation-span">Freelancer, Desarrollador web</span>
             </li>
             <li>
-              <a class="smoothscroll" href="#contact" title="">Contacto</a>
+              <strong id="email-heading">Email:</strong>
+              <span
+                ><a href="mailto:dan.nm9906@gmail.com"
+                  >dan.nm9906@gmail.com</a
+                ></span
+              >
+            </li>
+            <li>
+              <strong id="phone-heading">Teléfono:</strong>
+              <span><a href="tel:+5355794344">+5355794344</a></span>
             </li>
           </ul>
-        </nav>
-      </div>
-      <!-- /top-bar -->
-    </div>
-    <!-- /row -->
-  </header>
-  <!-- /header -->
+          <!-- /info-list -->
+        </div>
 
-  <!-- intro section
-   ================================================== -->
-  <section id="intro">
-    <div class="intro-overlay"></div>
-
-    <div class="intro-content">
-      <div class="row">
-        <div class="col-twelve">
-          <h5>Hola, mundo.</h5>
-          <h1>Soy Daniel Navarro Machín.</h1>
-          <h2 style="opacity: 1; color: #1f7f15">(DNMjustMe)</h2>
-
-          <p class="intro-position">
-            <span>Desarrollador Web Full Stack</span>
+        <div class="col-six tab-full">
+          <h3 id="skills-heading">Habilidades</h3>
+          <p id="skills-p">
+            Poseo grandes habilidades de auto superación, extremadamente
+            autodidacta, proactivo y gran jugador en equipo.
           </p>
 
-          <a class="button stroke smoothscroll" href="#about" title="">Más sobre de mi <svg aria-hidden="true"
-              focusable="false" data-prefix="fa-thin" data-icon="angle-down"
-              class="svg-inline--fa fa-angle-down fa-w-12" role="img" xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 384 512" style="height: 2.5rem; position: relative; top: 7px">
-              <path
-                d="M191.999 352C189.999 352 188.03 351.266 186.468 349.781L34.471 205.774C31.283 202.727 31.158 197.649 34.221 194.461C37.314 191.273 42.377 191.18 45.533 194.211L191.999 332.921L338.467 194.209C341.686 191.178 346.748 191.271 349.779 194.459C352.842 197.646 352.717 202.725 349.529 205.772L197.53 349.781C195.968 351.266 193.999 352 191.999 352Z"
-                fill="currentColor" />
-            </svg></a>
-        </div>
-      </div>
-    </div>
-    <!-- /intro-content -->
-
-    <ul class="intro-social">
-      <li>
-        <a href="https://www.facebook.com/daniel.navarromachin/" target="_blank">
-          <svg aria-hidden="true" focusable="false" data-prefix="fa-brands" data-icon="facebook-f"
-            class="svg-inline--fa fa-facebook-f fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 320 512" style="height: 2.5rem;">
-            <path
-              d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"
-              fill="currentColor" />
-          </svg>
-        </a>
-      </li>
-      <li>
-        <a href="https://twitter.com/dnm_justMe" target="_blank">
-          <svg aria-hidden="true" focusable="false" data-prefix="fa-brands" data-icon="twitter"
-            class="svg-inline--fa fa-twitter fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 512 512" style="height: 2.5rem;">
-            <path
-              d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"
-              fill="currentColor" />
-          </svg>
-        </a>
-      </li>
-      <li>
-        <a href="https://www.instagram.com/dnm_justme/" target="_blank">
-          <svg aria-hidden="true" focusable="false" data-prefix="fa-brands" data-icon="instagram"
-            class="svg-inline--fa fa-instagram fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 448 512" style="height: 2.5rem;">
-            <path
-              d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
-              fill="currentColor" />
-          </svg>
-        </a>
-      </li>
-      <li>
-        <a href="https://github.com/dnmJustMe" target="_blank">
-          <svg aria-hidden="true" focusable="false" data-prefix="fa-brands" data-icon="github"
-            class="svg-inline--fa fa-github fa-w-15.5" role="img" xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 496 512" style="height: 2.5rem;">
-            <path
-              d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"
-              fill="currentColor" />
-          </svg>
-        </a>
-      </li>
-      <li>
-        <a href="https://api.whatsapp.com/send?phone=5355794344" target="_blank">
-          <svg aria-hidden="true" focusable="false" data-prefix="fa-brands" data-icon="whatsapp"
-            class="svg-inline--fa fa-whatsapp fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 448 512" style="height: 2.5rem;">
-            <path
-              d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"
-              fill="currentColor" />
-          </svg>
-        </a>
-      </li>
-    </ul>
-    <!-- /intro-social -->
-  </section>
-  <!-- /intro -->
-
-  <!-- about section
-   ================================================== -->
-  <section id="about">
-    <div class="row section-intro">
-      <div class="col-twelve">
-        <h5>Sobre mi</h5>
-        <h1>Permítame introducirme.</h1>
-
-        <div class="intro-info">
-          <img src="images/profile-pic.jpg" alt="Profile Picture" />
-
-          <p class="lead">
-            Mi nombre es Daniel, soy graduado de Ingeniería Informática en la Universidad de Matanzas Camilo Cienfuegos.
-          </p>
-        </div>
-      </div>
-    </div>
-    <!-- /section-intro -->
-
-    <div class="row about-content">
-      <div class="col-six tab-full">
-        <h3>Perfil</h3>
-        <p>
-          Nacido en Cárdenas, Matanzas, Cuba. Actualmente viviendo en Máximo Gómez, Perico, Matanzas, Cuba.
-        </p>
-
-        <ul class="info-list">
-          <li>
-            <strong>Nombre completo:</strong>
-            <span>Daniel Navarro Machín</span>
-          </li>
-          <li>
-            <strong>Fecha de nacimiento:</strong>
-            <span>27 de junio de 1999</span>
-          </li>
-          <li>
-            <strong>Ocupación:</strong>
-            <span>Freelancer, Desarrollador web</span>
-          </li>
-          <li>
-            <strong>Email:</strong>
-            <span><a href="mailto:dan.nm9906@gmail.com">dan.nm9906@gmail.com</a></span>
-          </li>
-          <li>
-            <strong>Teléfono:</strong>
-            <span><a href="tel:+5355794344">+5355794344</a></span>
-          </li>
-        </ul>
-        <!-- /info-list -->
-      </div>
-
-      <div class="col-six tab-full">
-        <h3>Habilidades</h3>
-        <p>
-          Poseo grandes habilidades de auto superación, extremadamente autodidacta, proactivo y gran jugador en equipo.
-        </p>
-
-        <ul class="skill-bars">
-          <li>
-            <div class="progress percent90"></div>
-            <strong>HTML5</strong>
-          </li>
-          <li>
-            <div class="progress percent75"></div>
-            <strong>Bootstrap</strong>
-          </li>
-          <li>
-            <div class="progress percent75"></div>
-            <strong>PHP</strong>
-          </li>
-          <li>
-            <div class="progress percent75"></div>
-            <strong>MySQL</strong>
-          </li>
-          <li>
-            <div class="progress percent60"></div>
-            <strong>Javascript</strong>
-          </li>
-          <li>
-            <div class="progress percent85"></div>
-            <strong>CSS3</strong>
-          </li>
-          <li>
-            <div class="progress percent45"></div>
-            <strong>jQuery</strong>
-          </li>
-        </ul>
-        <!-- /skill-bars -->
-      </div>
-    </div>
-
-    <div class="row button-section">
-      <div class="col-twelve">
-        <a href="#contact" title="Hire Me" class="button stroke smoothscroll">Contráteme</a>
-      </div>
-    </div>
-  </section>
-  <!-- /process-->
-
-  <!-- resume Section
-   ================================================== -->
-  <section id="resume" class="grey-section">
-    <div class="row section-intro">
-      <div class="col-twelve">
-        <h5>Currículum vítae</h5>
-        <h1>Más acerca de mi formación.</h1>
-      </div>
-    </div>
-    <!-- /section-intro-->
-
-    <div class="row resume-timeline">
-      <div class="col-twelve resume-header">
-        <h2>Educación</h2>
-      </div>
-
-      <div class="col-twelve">
-        <div class="timeline-wrap">
-          <div class="timeline-block">
-            <div class="timeline-ico">
-              <svg aria-hidden="true" focusable="false" data-prefix="fa-solid" data-icon="graduation-cap"
-                class="svg-inline--fa fa-graduation-cap fa-w-20" role="img" xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 640 512" style="height: 2rem; position: relative; top: 2px">
-                <path
-                  d="M623.953 136.914L341.215 35.684C327.482 30.773 312.518 30.773 298.785 35.684L16.047 136.914C6.438 140.352 0 149.617 0 160S6.438 179.648 16.047 183.086L76.008 204.555C64.121 220.359 55.811 238.734 51.518 258.531C40.047 263.395 32 274.758 32 288C32 297.953 36.814 306.488 43.939 312.359L19.105 461.367C17.48 471.121 25 480 34.887 480H93.113C103 480 110.52 471.121 108.895 461.367L84.061 312.359C91.186 306.488 96 297.953 96 288C96 277.707 90.826 268.969 83.277 263.113C87.529 245.352 96.154 229.289 108.213 216.086L298.785 284.316C312.518 289.227 327.482 289.227 341.215 284.316L623.953 183.086C633.562 179.648 640 170.383 640 160S633.562 140.352 623.953 136.914ZM351.988 314.449C341.688 318.133 330.926 320 320 320C309.076 320 298.312 318.133 287.998 314.445L142.781 262.453L128 405.328C128 446.602 213.999 480 320 480C425.999 480 512 446.602 512 405.328L497.219 262.453L351.988 314.449Z"
-                  fill="currentColor" />
-              </svg>
-            </div>
-
-            <div class="timeline-header">
-              <h3>Ingeniero Informático</h3>
-              <p>2018 - 2023</p>
-            </div>
-
-            <div class="timeline-content">
-              <h4>Universidad de Matanzas Camilo Cienfuegos, Matanzas, Cuba</h4>
-              <p>
-                Obtuve las bases de mis conocimientos. Desarrollé mis habilidades de lógica de programación,
-                programación orientada a objetos, estructura de datos, arquitectura de computadoras, patrones de
-                diseño, metodologías de desarrollo, entre otros. Obtuve las nociones en lenguajes como C#, Python,
-                Ensamblador 8086.
-              </p>
-            </div>
-          </div>
-          <div class="timeline-block">
-            <div class="timeline-ico">
-              <svg aria-hidden="true" focusable="false" data-prefix="fa-solid" data-icon="graduation-cap"
-                class="svg-inline--fa fa-graduation-cap fa-w-20" role="img" xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 640 512" style="height: 2rem; position: relative; top: 2px">
-                <path
-                  d="M623.953 136.914L341.215 35.684C327.482 30.773 312.518 30.773 298.785 35.684L16.047 136.914C6.438 140.352 0 149.617 0 160S6.438 179.648 16.047 183.086L76.008 204.555C64.121 220.359 55.811 238.734 51.518 258.531C40.047 263.395 32 274.758 32 288C32 297.953 36.814 306.488 43.939 312.359L19.105 461.367C17.48 471.121 25 480 34.887 480H93.113C103 480 110.52 471.121 108.895 461.367L84.061 312.359C91.186 306.488 96 297.953 96 288C96 277.707 90.826 268.969 83.277 263.113C87.529 245.352 96.154 229.289 108.213 216.086L298.785 284.316C312.518 289.227 327.482 289.227 341.215 284.316L623.953 183.086C633.562 179.648 640 170.383 640 160S633.562 140.352 623.953 136.914ZM351.988 314.449C341.688 318.133 330.926 320 320 320C309.076 320 298.312 318.133 287.998 314.445L142.781 262.453L128 405.328C128 446.602 213.999 480 320 480C425.999 480 512 446.602 512 405.328L497.219 262.453L351.988 314.449Z"
-                  fill="currentColor" />
-              </svg>
-            </div>
-
-            <div class="timeline-header">
-              <h3>Nivel de inglés B2</h3>
-              <p>2018 - 2019</p>
-            </div>
-
-            <div class="timeline-content">
-              <h4>Escuela de idiomas de la Universidad de Matanzas Camilo Cienfuegos</h4>
-              <p>
-                Desarrollé mis habilidades en el idioma inglés, obteniendo el certificado de nivel B2.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </div>
-
-    <div class="row resume-timeline">
-      <div class="col-twelve resume-header">
-        <h2>Experiencia de trabajo</h2>
-      </div>
-      <!-- /resume-header -->
-
-      <div class="col-twelve">
-        <div class="timeline-wrap">
-          <div class="timeline-block">
-            <div class="timeline-ico">
-              <svg aria-hidden="true" focusable="false" data-prefix="fa-solid" data-icon="briefcase"
-                class="svg-inline--fa fa-briefcase fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 512 512" style="height: 2rem; position: relative; top: 2px">
-                <path
-                  d="M320 336C320 344.844 312.844 352 304 352H208C199.156 352 192 344.844 192 336V288H0V432C0 457.594 22.406 480 48 480H464C489.594 480 512 457.594 512 432V288H320V336ZM464 96H384V48C384 22.406 361.594 0 336 0H176C150.406 0 128 22.406 128 48V96H48C22.406 96 0 118.406 0 144V256H512V144C512 118.406 489.594 96 464 96ZM336 96H176V48H336V96Z"
-                  fill="currentColor" />
-              </svg>
-            </div>
-
-            <div class="timeline-header">
-              <h3>Desarrollador web</h3>
-              <p>2020 - Presente</p>
-            </div>
-
-            <div class="timeline-content">
-              <h4>Estación Experimental de Pastos y Forrajes Indio Hatuey, Matanzas,
-                Cuba.</h4>
-              <p>
-                En la estación puse en práctica los conocimientos obenidos durante toda la carrera y obtuve algunos
-                nuevos. Gracias a esto pude desarrollar mi trabajo de diploma, que consiste en un sistema de gestión
-                para su proceso de contratación, desarrollado en código nativo, utilizando HTML5, CSS3, JS, Bootsrap,
-                jQuery para el Front y PHP, Maria DB para el Back.
-              </p>
-              <p>
-                Además soy el diseñador y desarrollador del sitio de su biblioteca web. Desarrollado con tecnologías
-                similares.
-                <a href="http://biblioteca.ihatuey.cu/" target="_blank">Visitar Biblioteca André Voisin
-                  <svg aria-hidden="true" focusable="false" data-prefix="fa-solid" data-icon="link"
-                    class="svg-inline--fa fa-link fa-w-20" role="img" xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 640 512" style="height: 2rem; position: relative; top: 2px">
+          <div class="skills">
+            <div class="skill">
+              <svg
+                viewBox="-52.5 0 361 361"
+                version="1.1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                preserveAspectRatio="xMidYMid"
+                fill="#000000"
+              >
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g
+                  id="SVGRepo_tracerCarrier"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></g>
+                <g id="SVGRepo_iconCarrier">
+                  <g>
                     <path
-                      d="M598.594 41.406C570.991 13.803 534.809 0 498.629 0S426.27 13.803 398.665 41.406L355.309 84.762C370.42 92.773 384.78 102.342 397.219 114.781C400.366 117.928 403.118 121.299 405.961 124.619L443.92 86.66C458.534 72.047 477.963 64 498.629 64S538.727 72.047 553.34 86.662C567.954 101.275 576.002 120.705 576.002 141.371S567.954 181.467 553.34 196.08L420.081 329.338C405.467 343.951 386.038 352 365.372 352S325.276 343.951 310.663 329.336C296.047 314.723 288 295.293 288 274.627S296.047 234.531 310.663 219.918L314.168 216.412C312.075 212.473 309.95 208.518 306.704 205.266C298.141 196.719 286.75 192 274.625 192C262.692 192 251.528 196.664 243.014 204.969C212.299 258.926 219.381 328.566 265.407 374.592C293.012 402.197 329.192 416 365.372 416C401.553 416 437.733 402.197 465.336 374.592L598.594 241.336C627.045 212.885 640.834 175.325 639.962 138.044C639.142 102.981 625.353 68.165 598.594 41.406ZM234.042 387.381L196.083 425.34C181.469 439.953 162.04 448 141.374 448C120.706 448 101.274 439.953 86.661 425.338C72.047 410.725 63.999 391.295 63.999 370.629S72.047 330.533 86.661 315.92L219.922 182.662C234.536 168.049 253.965 160 274.631 160S314.727 168.049 329.34 182.664C343.956 197.277 352.002 216.707 352.002 237.373S343.956 277.469 329.34 292.082L325.834 295.588C327.928 299.527 330.053 303.482 333.299 306.734C341.862 315.281 353.252 320 365.377 320C377.311 320 388.475 315.336 396.989 307.031C427.704 253.074 420.622 183.434 374.596 137.408C346.991 109.803 310.811 96 274.631 96C238.45 96 202.27 109.803 174.667 137.408L41.407 270.664C13.802 298.268 0 334.449 0 370.629C0 406.809 13.802 442.989 41.407 470.594C69.01 498.197 105.192 512 141.374 512C177.553 512 213.733 498.197 241.338 470.594L284.694 427.238C269.583 419.227 255.223 409.658 242.784 397.219C239.637 394.072 236.885 390.701 234.042 387.381Z"
-                      fill="currentColor" />
-                  </svg>
-                </a>
-              </p>
-
-            </div>
-          </div>
-          <!-- /timeline-block -->
-
-          <div class="timeline-block">
-            <div class="timeline-ico">
-              <svg aria-hidden="true" focusable="false" data-prefix="fa-solid" data-icon="briefcase"
-                class="svg-inline--fa fa-briefcase fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 512 512" style="height: 2rem; position: relative; top: 2px">
-                <path
-                  d="M320 336C320 344.844 312.844 352 304 352H208C199.156 352 192 344.844 192 336V288H0V432C0 457.594 22.406 480 48 480H464C489.594 480 512 457.594 512 432V288H320V336ZM464 96H384V48C384 22.406 361.594 0 336 0H176C150.406 0 128 22.406 128 48V96H48C22.406 96 0 118.406 0 144V256H512V144C512 118.406 489.594 96 464 96ZM336 96H176V48H336V96Z"
-                  fill="currentColor" />
+                      d="M255.554813,70.7657143 L232.31367,331.125451 L127.843868,360.087912 L23.6617143,331.166242 L0.445186813,70.7657143 L255.554813,70.7657143 L255.554813,70.7657143 Z"
+                      fill="#E44D26"
+                    ></path>
+                    <path
+                      d="M128,337.950242 L212.416703,314.546637 L232.277802,92.0573187 L128,92.0573187 L128,337.950242 L128,337.950242 Z"
+                      fill="#F16529"
+                    ></path>
+                    <path
+                      d="M82.8202198,155.932132 L128,155.932132 L128,123.994725 L47.917011,123.994725 L48.6814945,132.562989 L56.530989,220.572835 L128,220.572835 L128,188.636132 L85.7389011,188.636132 L82.8202198,155.932132 L82.8202198,155.932132 Z"
+                      fill="#EBEBEB"
+                    ></path>
+                    <path
+                      d="M90.0177582,236.54189 L57.957978,236.54189 L62.4323516,286.687648 L127.853011,304.848879 L128,304.808088 L128,271.580132 L127.860044,271.617407 L92.2915165,262.013187 L90.0177582,236.54189 L90.0177582,236.54189 Z"
+                      fill="#EBEBEB"
+                    ></path>
+                    <path
+                      d="M24.1807473,0 L40.4107253,0 L40.4107253,16.0351648 L55.2573187,16.0351648 L55.2573187,0 L71.488,0 L71.488,48.5584176 L55.258022,48.5584176 L55.258022,32.2981978 L40.4114286,32.2981978 L40.4114286,48.5584176 L24.1814505,48.5584176 L24.1814505,0 L24.1807473,0 L24.1807473,0 Z"
+                      fill="#000000"
+                    ></path>
+                    <path
+                      d="M92.8309451,16.1026813 L78.5427692,16.1026813 L78.5427692,0 L123.356835,0 L123.356835,16.1026813 L109.06233,16.1026813 L109.06233,48.5584176 L92.8316484,48.5584176 L92.8316484,16.1026813 L92.8309451,16.1026813 L92.8309451,16.1026813 Z"
+                      fill="#000000"
+                    ></path>
+                    <path
+                      d="M130.469275,0 L147.392703,0 L157.802901,17.061978 L168.202549,0 L185.132308,0 L185.132308,48.5584176 L168.969143,48.5584176 L168.969143,24.4901978 L157.802901,41.7554286 L157.523692,41.7554286 L146.349714,24.4901978 L146.349714,48.5584176 L130.469275,48.5584176 L130.469275,0 L130.469275,0 Z"
+                      fill="#000000"
+                    ></path>
+                    <path
+                      d="M193.20967,0 L209.444571,0 L209.444571,32.5077802 L232.268659,32.5077802 L232.268659,48.5584176 L193.20967,48.5584176 L193.20967,0 L193.20967,0 Z"
+                      fill="#000000"
+                    ></path>
+                    <path
+                      d="M127.889582,220.572835 L167.216527,220.572835 L163.509451,261.992791 L127.889582,271.606857 L127.889582,304.833407 L193.362286,286.687648 L193.842637,281.291956 L201.347516,197.212132 L202.126769,188.636132 L127.889582,188.636132 L127.889582,220.572835 L127.889582,220.572835 Z"
+                      fill="#FFFFFF"
+                    ></path>
+                    <path
+                      d="M127.889582,155.854066 L127.889582,155.932132 L205.032791,155.932132 L205.673495,148.753582 L207.128615,132.562989 L207.892396,123.994725 L127.889582,123.994725 L127.889582,155.854066 L127.889582,155.854066 Z"
+                      fill="#FFFFFF"
+                    ></path>
+                  </g>
+                </g>
               </svg>
+              <p>HTML5</p>
             </div>
-
-            <div class="timeline-header">
-              <h3>Especialista en Informática</h3>
-              <p>Enero 2023 - Presente</p>
+            <div class="skill">
+              <svg
+                viewBox="-52.5 0 361 361"
+                version="1.1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                preserveAspectRatio="xMidYMid"
+                fill="#000000"
+              >
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g
+                  id="SVGRepo_tracerCarrier"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></g>
+                <g id="SVGRepo_iconCarrier">
+                  <g>
+                    <path
+                      d="M127.843868,360.087912 L23.6617143,331.166242 L0.445186813,70.7657143 L255.554813,70.7657143 L232.31367,331.125451 L127.843868,360.087912 L127.843868,360.087912 Z"
+                      fill="#264DE4"
+                    ></path>
+                    <path
+                      d="M212.416703,314.546637 L232.277802,92.0573187 L128,92.0573187 L128,337.950242 L212.416703,314.546637 L212.416703,314.546637 Z"
+                      fill="#2965F1"
+                    ></path>
+                    <path
+                      d="M53.6685714,188.636132 L56.530989,220.572835 L128,220.572835 L128,188.636132 L53.6685714,188.636132 L53.6685714,188.636132 Z"
+                      fill="#EBEBEB"
+                    ></path>
+                    <path
+                      d="M47.917011,123.994725 L50.8202198,155.932132 L128,155.932132 L128,123.994725 L47.917011,123.994725 L47.917011,123.994725 Z"
+                      fill="#EBEBEB"
+                    ></path>
+                    <path
+                      d="M128,271.580132 L127.860044,271.617407 L92.2915165,262.013187 L90.0177582,236.54189 L57.957978,236.54189 L62.4323516,286.687648 L127.853011,304.848879 L128,304.808088 L128,271.580132 L128,271.580132 Z"
+                      fill="#EBEBEB"
+                    ></path>
+                    <path
+                      d="M60.4835165,0 L99.1648352,0 L99.1648352,16.1758242 L76.6593407,16.1758242 L76.6593407,32.3516484 L99.1648352,32.3516484 L99.1648352,48.5274725 L60.4835165,48.5274725 L60.4835165,0 L60.4835165,0 Z"
+                      fill="#000000"
+                    ></path>
+                    <path
+                      d="M106.901099,0 L145.582418,0 L145.582418,14.0659341 L123.076923,14.0659341 L123.076923,16.8791209 L145.582418,16.8791209 L145.582418,49.2307692 L106.901099,49.2307692 L106.901099,34.4615385 L129.406593,34.4615385 L129.406593,31.6483516 L106.901099,31.6483516 L106.901099,0 L106.901099,0 Z"
+                      fill="#000000"
+                    ></path>
+                    <path
+                      d="M153.318681,0 L192,0 L192,14.0659341 L169.494505,14.0659341 L169.494505,16.8791209 L192,16.8791209 L192,49.2307692 L153.318681,49.2307692 L153.318681,34.4615385 L175.824176,34.4615385 L175.824176,31.6483516 L153.318681,31.6483516 L153.318681,0 L153.318681,0 Z"
+                      fill="#000000"
+                    ></path>
+                    <path
+                      d="M202.126769,188.636132 L207.892396,123.994725 L127.889582,123.994725 L127.889582,155.932132 L172.892132,155.932132 L169.98611,188.636132 L127.889582,188.636132 L127.889582,220.572835 L167.216527,220.572835 L163.509451,261.992791 L127.889582,271.606857 L127.889582,304.833407 L193.362286,286.687648 L193.842637,281.291956 L201.347516,197.212132 L202.126769,188.636132 L202.126769,188.636132 Z"
+                      fill="#FFFFFF"
+                    ></path>
+                  </g>
+                </g>
+              </svg>
+              <p>CSS3</p>
             </div>
-
-            <div class="timeline-content">
-              <h4>Dirección Municipal de Ordenamiento y Urbanismo, Perico, Matanzas, Cuba</h4>
-              <p>
-                Dentro de las funciones que realizo se encuentran:
-              </p>
-              <ul class="disc">
-                <li>Actualizaciones de aplicaciones, antivirus y software en general.</li>
-                <li>Mantenimiento y actualización de hardware.</li>
-                <li>Inventarios de recursos(hardware y software)</li>
-                <li>Capacitaciones del personal sobre diversas aplicaciones.</li>
-              </ul>
+            <div class="skill">
+              <svg
+                viewBox="0 0 256 256"
+                version="1.1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                preserveAspectRatio="xMidYMid"
+                fill="#000000"
+              >
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g
+                  id="SVGRepo_tracerCarrier"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></g>
+                <g id="SVGRepo_iconCarrier">
+                  <g>
+                    <path
+                      d="M0,222.991225 C0,241.223474 14.7785318,256 33.0087747,256 L222.991225,256 C241.223474,256 256,241.221468 256,222.991225 L256,33.0087747 C256,14.7765263 241.221468,0 222.991225,0 L33.0087747,0 C14.7765263,0 0,14.7785318 0,33.0087747 L0,222.991225 Z"
+                      fill="#563D7C"
+                    ></path>
+                    <path
+                      d="M106.157563,113.238095 L106.157563,76.9845938 L138.069328,76.9845938 C141.108559,76.9845938 144.039202,77.2378593 146.861345,77.7443978 C149.683488,78.2509362 152.179961,79.1554557 154.35084,80.4579832 C156.52172,81.7605107 158.258397,83.5695496 159.560924,85.8851541 C160.863452,88.2007585 161.514706,91.1675823 161.514706,94.7857143 C161.514706,101.298352 159.560944,106.001853 155.653361,108.896359 C151.745779,111.790864 146.752832,113.238095 140.67437,113.238095 L106.157563,113.238095 L106.157563,113.238095 Z M72.07493,50.5 L72.07493,205.5 L147.186975,205.5 C154.133788,205.5 160.899594,204.631661 167.484594,202.894958 C174.069594,201.158255 179.93088,198.480877 185.068627,194.862745 C190.206375,191.244613 194.294803,186.577293 197.334034,180.860644 C200.373264,175.143996 201.892857,168.37819 201.892857,160.563025 C201.892857,150.866431 199.541107,142.581033 194.837535,135.706583 C190.133963,128.832132 183.00635,124.020088 173.454482,121.270308 C180.401295,117.941627 185.647508,113.672295 189.193277,108.462185 C192.739047,103.252075 194.511905,96.7395349 194.511905,88.9243697 C194.511905,81.6881057 193.317939,75.6097352 190.929972,70.6890756 C188.542005,65.7684161 185.177193,61.8247114 180.835434,58.8578431 C176.493676,55.8909749 171.283644,53.756309 165.205182,52.4537815 C159.12672,51.151254 152.397096,50.5 145.016106,50.5 L72.07493,50.5 L72.07493,50.5 Z M106.157563,179.015406 L106.157563,136.466387 L143.279412,136.466387 C150.660401,136.466387 156.594049,138.166883 161.080532,141.567927 C165.567016,144.968971 167.810224,150.649353 167.810224,158.609244 C167.810224,162.661552 167.122789,165.990183 165.747899,168.595238 C164.373009,171.200293 162.527789,173.262597 160.212185,174.782213 C157.89658,176.301828 155.219203,177.387252 152.179972,178.038515 C149.140741,178.689779 145.956833,179.015406 142.628151,179.015406 L106.157563,179.015406 L106.157563,179.015406 Z"
+                      fill="#FFFFFF"
+                    ></path>
+                  </g>
+                </g>
+              </svg>
+              <p>Bootstrap</p>
+            </div>
+            <div class="skill">
+              <svg
+                viewBox="0 0 32 32"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="#000000"
+              >
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g
+                  id="SVGRepo_tracerCarrier"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></g>
+                <g id="SVGRepo_iconCarrier">
+                  <title>file_type_tailwind</title>
+                  <path
+                    d="M9,13.7q1.4-5.6,7-5.6c5.6,0,6.3,4.2,9.1,4.9q2.8.7,4.9-2.1-1.4,5.6-7,5.6c-5.6,0-6.3-4.2-9.1-4.9Q11.1,10.9,9,13.7ZM2,22.1q1.4-5.6,7-5.6c5.6,0,6.3,4.2,9.1,4.9q2.8.7,4.9-2.1-1.4,5.6-7,5.6c-5.6,0-6.3-4.2-9.1-4.9Q4.1,19.3,2,22.1Z"
+                    style="fill: #44a8b3"
+                  ></path>
+                </g>
+              </svg>
+              <p>Tailwind</p>
+            </div>
+            <div class="skill">
+              <svg
+                viewBox="0 0 256 256"
+                version="1.1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                preserveAspectRatio="xMidYMid"
+                fill="#000000"
+              >
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g
+                  id="SVGRepo_tracerCarrier"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></g>
+                <g id="SVGRepo_iconCarrier">
+                  <g>
+                    <path
+                      d="M0,0 L256,0 L256,256 L0,256 L0,0 Z"
+                      fill="#F7DF1E"
+                    ></path>
+                    <path
+                      d="M67.311746,213.932292 L86.902654,202.076241 C90.6821079,208.777346 94.1202286,214.447137 102.367086,214.447137 C110.272203,214.447137 115.256076,211.354819 115.256076,199.326883 L115.256076,117.528787 L139.313575,117.528787 L139.313575,199.666997 C139.313575,224.58433 124.707759,235.925943 103.3984,235.925943 C84.1532952,235.925943 72.9819429,225.958603 67.3113397,213.93026"
+                      fill="#000000"
+                    ></path>
+                    <path
+                      d="M152.380952,211.354413 L171.969422,200.0128 C177.125994,208.433981 183.827911,214.619835 195.684368,214.619835 C205.652521,214.619835 212.009041,209.635962 212.009041,202.762159 C212.009041,194.513676 205.479416,191.592025 194.481168,186.78207 L188.468419,184.202565 C171.111213,176.81473 159.597308,167.53534 159.597308,147.944838 C159.597308,129.901308 173.344508,116.153295 194.825752,116.153295 C210.119924,116.153295 221.117765,121.48094 229.021663,135.400432 L210.29059,147.428775 C206.166146,140.040127 201.699556,137.119289 194.826159,137.119289 C187.78047,137.119289 183.312254,141.587098 183.312254,147.428775 C183.312254,154.646349 187.78047,157.568406 198.089956,162.036622 L204.103924,164.614095 C224.553448,173.378641 236.067352,182.313448 236.067352,202.418387 C236.067352,224.071924 219.055137,235.927975 196.200432,235.927975 C173.860978,235.927975 159.425829,225.274311 152.381359,211.354413"
+                      fill="#000000"
+                    ></path>
+                  </g>
+                </g>
+              </svg>
+              <p>JavaScript</p>
+            </div>
+            <div class="skill">
+              <svg
+                viewBox="0 -198 512 512"
+                version="1.1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                fill="#000000"
+              >
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g
+                  id="SVGRepo_tracerCarrier"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></g>
+                <g id="SVGRepo_iconCarrier">
+                  <defs></defs>
+                  <g
+                    stroke="none"
+                    stroke-width="1"
+                    fill="none"
+                    fill-rule="evenodd"
+                  >
+                    <g>
+                      <path
+                        d="M489.718192,8.64613026 L511.13882,8.76383142 C511.13882,8.76383142 471.313656,62.7278468 468.06216,67.1259464 C467.005794,68.5501302 465.401134,70.0861302 464.588016,71.9899464 C462.531188,76.7764598 460.419432,87.2754022 460.419432,87.2754022 L440.82023,87.3725058 C440.82023,87.3725058 443.86967,76.4292414 443.744122,70.600092 C443.633288,65.5075556 441.034054,60.421885 439.57554,55.314636 C438.102314,50.1455938 436.101394,40.02918 436.101394,40.02918 L456.25085,40.02918 L459.029578,51.1460536 L489.718192,8.64613026"
+                        fill="#1A1918"
+                      ></path>
+                      <path
+                        d="M449.157394,20.0268506 C453.110192,22.4102988 455.535816,35.5555556 455.535816,35.5555556 C455.535816,35.5555556 434.8518,35.8605978 423.595648,35.8605978 L413.868628,35.8605978 L402.057318,87.2754022 L383.993134,87.2754022 C383.993134,87.2754022 395.234574,31.400705 397.888736,21.2705594 C398.749916,17.9916015 403.78066,18.5536245 412.277702,18.5536245 L425.846682,18.5536245 C434.608552,18.5536245 444.849532,17.4354636 449.157394,20.0268506"
+                        fill="#1A1918"
+                      ></path>
+                      <path
+                        d="M365.059924,45.0667892 C365.059924,45.0667892 365.622928,41.7662528 363.149242,37.9448888 C361.037486,34.6865288 359.08561,33.929318 353.527172,33.7557088 C337.831724,33.2623448 338.136766,44.89318 338.136766,44.89318 L365.059924,45.0667892 L365.059924,45.0667892 Z M382.082452,31.7479234 C384.382528,40.0438928 379.99816,59.5391264 379.99816,59.5391264 C379.99816,59.5391264 357.104306,59.1565978 344.56423,59.5391264 C340.66538,59.6578084 335.997548,59.1154022 334.83721,60.9289808 C333.204108,63.4713256 335.433564,67.383908 337.323648,69.0366284 C339.499158,70.9404444 343.736398,71.1562298 345.258666,71.3504368 C355.436874,72.6431878 376.7398,71.6839234 376.7398,71.6839234 L373.04987,88.0247662 C373.04987,88.0247662 342.94584,89.5333026 327.88892,85.940475 C324.915984,85.2323066 322.12941,83.8012568 320.246192,81.7718928 C319.73223,81.2167356 319.286928,80.459525 318.80043,79.8062836 C318.412016,79.284475 317.280122,77.5689808 316.772046,76.213456 C313.33321,67.0494406 317.175172,49.4923524 320.940628,40.0850882 C321.378084,38.9943908 321.927356,37.6123832 322.505072,36.4373334 C323.226974,34.971954 323.838038,33.3182528 324.414774,32.4423602 C324.803188,31.838161 325.2838,31.4487662 325.686928,30.8788966 C326.151846,30.2050574 326.693272,29.551816 327.194482,28.9691954 C328.583356,27.3566896 330.160552,26.2169502 332.057502,24.800613 C338.330974,20.1033564 349.68423,16.4556015 363.32285,17.8523218 C368.457564,18.3800153 376.212108,20.2141916 379.99816,25.4950498 C381.012352,26.905502 381.512582,29.7048276 382.082452,31.7479234 L382.082452,31.7479234 L382.082452,31.7479234 Z"
+                        fill="#1A1918"
+                      ></path>
+                      <path
+                        d="M299.22869,18.4908506 L316.744582,18.3868812 C316.744582,18.3868812 306.983234,64.6944368 302.008398,87.2754022 L281.858942,87.2754022 C267.776,87.2754022 255.234942,89.019341 249.899158,78.9372568 C244.72325,69.1484444 249.662774,53.0498698 251.983448,42.1134712 C253.623418,34.3736398 257.076966,18.5536245 257.076966,18.5536245 L275.224522,18.3868812 C275.224522,18.3868812 270.096674,43.0168276 267.96334,55.314636 C267.199264,59.7196016 265.62305,63.8675862 267.268904,67.1259464 C268.832368,70.22541 271.020628,70.4470804 277.69036,70.600092 C279.803096,70.649134 286.722942,70.600092 286.722942,70.600092 L299.22869,18.4908506"
+                        fill="#1A1918"
+                      ></path>
+                      <path
+                        d="M217.243954,51.8404904 C219.07813,45.3237702 221.752888,38.2577778 221.412536,32.3864522 C221.04472,26.106115 215.778574,20.3878008 212.380934,19.1862682 C202.14682,15.5728429 192.565946,20.624184 188.758314,24.7437242 C183.83154,30.0804904 182.164107,36.3127662 180.420169,44.89318 C179.121533,51.2637548 178.058299,57.9893946 180.420169,62.957364 C184.602483,71.7398314 197.64377,69.8222836 211.685518,69.9056552 C213.769808,64.3197548 215.49315,58.0453026 217.243954,51.8404904 L217.243954,51.8404904 L217.243954,51.8404904 Z M241.561992,26.1335786 C243.562912,40.6824214 235.885854,56.7398008 230.59813,70.7040614 C235.989824,71.1905594 240.714544,70.6285364 241.054896,71.030682 C241.40898,71.5524904 237.441472,87.6991264 236.058482,87.7403218 C231.779066,87.852138 217.59902,87.969839 211.685518,87.969839 C192.391356,87.969839 174.340904,89.2272796 165.135693,79.6326744 C161.397701,75.7348046 158.81318,69.0503602 158.187402,64.3472184 C157.144766,56.4955708 158.451249,47.8523832 160.271693,40.7245978 C161.918529,34.2902682 164.030284,28.2178698 167.219985,22.659433 C175.327632,8.50685058 189.432153,-1.99797701 213.075372,0.426666666 C217.660812,0.89943295 224.247172,2.9072184 228.360828,5.28968582 C228.645272,5.45740996 229.639846,6.2489502 229.868384,6.38822988 C235.42682,9.92514942 240.491892,18.3662835 241.561992,26.1335786 L241.561992,26.1335786 L241.561992,26.1335786 Z"
+                        fill="#1A1918"
+                      ></path>
+                      <path
+                        d="M156.193349,18.5742222 C155.026146,23.88941 153.858943,29.9137472 152.628966,35.166161 L133.174927,35.166161 C134.682483,29.3438774 135.835954,23.5559234 137.34351,18.4908506 C143.56892,18.4908506 149.356874,18.5742222 156.193349,18.5742222"
+                        fill="#1A1918"
+                      ></path>
+                      <path
+                        d="M132.48049,40.02918 L151.239111,40.02918 C148.787004,53.6060076 143.930851,75.5052874 140.123218,90.748567 C137.73977,100.288245 136.148843,107.250268 129.700782,112.286897 C129.124046,112.739065 128.79154,112.524261 128.311908,112.982314 C127.123126,114.115188 121.627464,115.428536 118.584889,115.761042 C113.637517,116.296582 108.044751,115.830682 101.965487,115.706115 C103.556414,109.890697 105.356261,102.908077 106.773579,97.6968582 C121.593134,99.489839 121.968797,85.4824214 124.837762,71.9899464 C126.49833,64.1942068 131.529073,43.1561072 132.48049,40.02918"
+                        fill="#1A1918"
+                      ></path>
+                      <g
+                        transform="translate(0.000000, 8.827586)"
+                        fill="#21609B"
+                      >
+                        <path
+                          d="M88.7084138,66.6365058 L88.3062682,67.678161 C81.4550804,81.0176246 69.3171494,89.2027586 52.0033104,89.5637088 C43.9093946,89.7304522 36.1970268,87.6540076 31.1594176,85.3951264 C20.286774,80.5105288 11.1423755,71.4514636 6.14792338,61.7725058 C-1.01615326,47.897502 -2.30792338,28.596475 12.5881379,14.180046 C12.8176552,14.180046 10.7814253,17.3059923 11.0109425,17.3059923 L10.6009502,18.6399387 C-0.133394636,52.2465594 32.9376858,81.046069 65.0857932,77.7523984 C72.8118928,76.9608582 82.6644598,72.729502 88.7084138,66.6365058"
+                        ></path>
+                        <path
+                          d="M69.2543754,52.7399234 C77.3424062,52.7958314 85.7904062,49.0156628 90.792705,43.7083218 C86.416184,54.8183296 73.7436934,61.9598468 56.7486284,59.6882146 C42.5195402,57.7843984 28.9642912,43.4650728 27.5675708,29.1173026 C26.5465134,18.675249 30.1864214,12.4429732 36.183295,4.88361686 C34.0990038,8.83739464 33.3202146,11.8868352 33.1260076,13.8318467 C30.8475096,36.4196782 51.1695938,52.6222222 69.2543754,52.7399234"
+                        ></path>
+                        <path
+                          d="M89.980567,24.6848736 C88.7231264,27.5685518 81.483525,33.0151724 78.2869578,33.6958774 C65.6281992,36.3922146 57.5205518,30.389456 53.2744828,23.558866 C52.64282,22.5378084 51.4756168,19.7522146 51.2666974,19.0430651 C49.619862,13.443433 50.3770728,4.9738544 55.290115,0.58948659 C53.810023,4.75806896 53.5942376,9.60049042 54.3730268,12.7480153 C54.8448122,14.6518314 56.282728,17.9739464 57.7216246,20.0641226 C60.340475,23.8717548 62.0010422,24.7966896 65.3643524,26.8182068 C66.878774,27.7284292 68.5040306,28.4581762 69.2063142,28.659249 C72.3950344,29.5969348 79.1275402,32.0706206 89.980567,24.6848736"
+                        ></path>
+                      </g>
+                    </g>
+                  </g>
+                </g>
+              </svg>
+              <p>jQuery</p>
+            </div>
+            <div class="skill">
+              <svg
+                viewBox="0 0 32 32"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g
+                  id="SVGRepo_tracerCarrier"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></g>
+                <g id="SVGRepo_iconCarrier">
+                  <path
+                    d="M18.6789 15.9759C18.6789 14.5415 17.4796 13.3785 16 13.3785C14.5206 13.3785 13.3211 14.5415 13.3211 15.9759C13.3211 17.4105 14.5206 18.5734 16 18.5734C17.4796 18.5734 18.6789 17.4105 18.6789 15.9759Z"
+                    fill="#53C1DE"
+                  ></path>
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M24.7004 11.1537C25.2661 8.92478 25.9772 4.79148 23.4704 3.39016C20.9753 1.99495 17.7284 4.66843 16.0139 6.27318C14.3044 4.68442 10.9663 2.02237 8.46163 3.42814C5.96751 4.82803 6.73664 8.8928 7.3149 11.1357C4.98831 11.7764 1 13.1564 1 15.9759C1 18.7874 4.98416 20.2888 7.29698 20.9289C6.71658 23.1842 5.98596 27.1909 8.48327 28.5877C10.9973 29.9932 14.325 27.3945 16.0554 25.7722C17.7809 27.3864 20.9966 30.0021 23.4922 28.6014C25.9956 27.1963 25.3436 23.1184 24.7653 20.8625C27.0073 20.221 31 18.7523 31 15.9759C31 13.1835 26.9903 11.7923 24.7004 11.1537ZM24.4162 19.667C24.0365 18.5016 23.524 17.2623 22.8971 15.9821C23.4955 14.7321 23.9881 13.5088 24.3572 12.3509C26.0359 12.8228 29.7185 13.9013 29.7185 15.9759C29.7185 18.07 26.1846 19.1587 24.4162 19.667ZM22.85 27.526C20.988 28.571 18.2221 26.0696 16.9478 24.8809C17.7932 23.9844 18.638 22.9422 19.4625 21.7849C20.9129 21.6602 22.283 21.4562 23.5256 21.1777C23.9326 22.7734 24.7202 26.4763 22.85 27.526ZM9.12362 27.5111C7.26143 26.47 8.11258 22.8946 8.53957 21.2333C9.76834 21.4969 11.1286 21.6865 12.5824 21.8008C13.4123 22.9332 14.2816 23.9741 15.1576 24.8857C14.0753 25.9008 10.9945 28.557 9.12362 27.5111ZM2.28149 15.9759C2.28149 13.874 5.94207 12.8033 7.65904 12.3326C8.03451 13.5165 8.52695 14.7544 9.12123 16.0062C8.51925 17.2766 8.01977 18.5341 7.64085 19.732C6.00369 19.2776 2.28149 18.0791 2.28149 15.9759ZM9.1037 4.50354C10.9735 3.45416 13.8747 6.00983 15.1159 7.16013C14.2444 8.06754 13.3831 9.1006 12.5603 10.2265C11.1494 10.3533 9.79875 10.5569 8.55709 10.8297C8.09125 9.02071 7.23592 5.55179 9.1037 4.50354ZM20.3793 11.5771C21.3365 11.6942 22.2536 11.85 23.1147 12.0406C22.8562 12.844 22.534 13.6841 22.1545 14.5453C21.6044 13.5333 21.0139 12.5416 20.3793 11.5771ZM16.0143 8.0481C16.6054 8.66897 17.1974 9.3623 17.7798 10.1145C16.5985 10.0603 15.4153 10.0601 14.234 10.1137C14.8169 9.36848 15.414 8.67618 16.0143 8.0481ZM9.8565 14.5444C9.48329 13.6862 9.16398 12.8424 8.90322 12.0275C9.75918 11.8418 10.672 11.69 11.623 11.5748C10.9866 12.5372 10.3971 13.5285 9.8565 14.5444ZM11.6503 20.4657C10.6679 20.3594 9.74126 20.2153 8.88556 20.0347C9.15044 19.2055 9.47678 18.3435 9.85796 17.4668C10.406 18.4933 11.0045 19.4942 11.6503 20.4657ZM16.0498 23.9915C15.4424 23.356 14.8365 22.6531 14.2448 21.8971C15.4328 21.9423 16.6231 21.9424 17.811 21.891C17.2268 22.6608 16.6369 23.3647 16.0498 23.9915ZM22.1667 17.4222C22.5677 18.3084 22.9057 19.1657 23.1742 19.9809C22.3043 20.1734 21.3652 20.3284 20.3757 20.4435C21.015 19.4607 21.6149 18.4536 22.1667 17.4222ZM18.7473 20.5941C16.9301 20.72 15.1016 20.7186 13.2838 20.6044C12.2509 19.1415 11.3314 17.603 10.5377 16.0058C11.3276 14.4119 12.2404 12.8764 13.2684 11.4158C15.0875 11.2825 16.9178 11.2821 18.7369 11.4166C19.7561 12.8771 20.6675 14.4086 21.4757 15.9881C20.6771 17.5812 19.7595 19.1198 18.7473 20.5941ZM22.8303 4.4666C24.7006 5.51254 23.8681 9.22726 23.4595 10.8426C22.2149 10.5641 20.8633 10.3569 19.4483 10.2281C18.6239 9.09004 17.7698 8.05518 16.9124 7.15949C18.1695 5.98441 20.9781 3.43089 22.8303 4.4666Z"
+                    fill="#53C1DE"
+                  ></path>
+                </g>
+              </svg>
+              <p>React</p>
+            </div>
+            <div class="skill">
+              <svg
+                viewBox="0 0 32 32"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g
+                  id="SVGRepo_tracerCarrier"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></g>
+                <g id="SVGRepo_iconCarrier">
+                  <path d="M0 10V20H9V22H16V20H32V10H0Z" fill="#CB3837"></path>
+                  <path
+                    d="M5.46205 12H2V18H5.46205V13.6111H7.22344V18H8.98482V12H5.46205ZM10.7462 12V20H14.269V18H17.731V12H10.7462ZM15.9696 16.3889H14.269V13.6111H15.9696V16.3889ZM22.9545 12H19.4924V18H22.9545V13.6111H24.7158V18H26.4772V13.6111H28.2386V18H30V12H22.9545Z"
+                    fill="white"
+                  ></path>
+                </g>
+              </svg>
+              <p>npm</p>
+            </div>
+            <div class="skill">
+              <svg
+                viewBox="0 -60.5 256 256"
+                version="1.1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                preserveAspectRatio="xMidYMid"
+                fill="#000000"
+              >
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g
+                  id="SVGRepo_tracerCarrier"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></g>
+                <g id="SVGRepo_iconCarrier">
+                  <defs>
+                    <radialGradient
+                      id="radialGradient-1"
+                      cx="0.8366"
+                      cy="-125.811"
+                      r="363.0565"
+                      gradientTransform="matrix(0.463 0 0 0.463 76.4644 81.9182)"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop offset="0" style="stop-color: #ffffff"></stop>
+                      <stop offset="0.5" style="stop-color: #4c6b97"></stop>
+                      <stop offset="1" style="stop-color: #231f20"></stop>
+                    </radialGradient>
+                  </defs>
+                  <g>
+                    <ellipse
+                      fill="url(#radialGradient-1)"
+                      cx="128"
+                      cy="67.3"
+                      rx="128"
+                      ry="67.3"
+                    ></ellipse>
+                    <ellipse
+                      fill="#6181B6"
+                      cx="128"
+                      cy="67.3"
+                      rx="123"
+                      ry="62.3"
+                    ></ellipse>
+                    <g>
+                      <path
+                        fill="#FFFFFF"
+                        d="M152.9,87.5c0,0,6.1-31.4,6.1-31.4c1.4-7.1,0.2-12.4-3.4-15.7c-3.5-3.2-9.5-4.8-18.3-4.8h-10.6l3-15.6 c0.1-0.6,0-1.2-0.4-1.7c-0.4-0.5-0.9-0.7-1.5-0.7h-14.6c-1,0-1.8,0.7-2,1.6l-6.5,33.3c-0.6-3.8-2-7-4.4-9.6 c-4.3-4.9-11-7.4-20.1-7.4H52.1c-1,0-1.8,0.7-2,1.6L37,104.7c-0.1,0.6,0,1.2,0.4,1.7c0.4,0.5,0.9,0.7,1.5,0.7h14.7 c1,0,1.8-0.7,2-1.6l3.2-16.3h10.9c5.7,0,10.6-0.6,14.3-1.8c3.9-1.3,7.4-3.4,10.5-6.3c2.5-2.3,4.6-4.9,6.2-7.7l-2.6,13.5 c-0.1,0.6,0,1.2,0.4,1.7s0.9,0.7,1.5,0.7h14.6c1,0,1.8-0.7,2-1.6l7.2-37h10c4.3,0,5.5,0.8,5.9,1.2c0.3,0.3,0.9,1.5,0.2,5.2 l-5.8,29.9c-0.1,0.6,0,1.2,0.4,1.7c0.4,0.5,0.9,0.7,1.5,0.7H151C151.9,89.1,152.7,88.4,152.9,87.5z M85.3,61.5 c-0.9,4.7-2.6,8.1-5.1,10c-2.5,1.9-6.6,2.9-12,2.9h-6.5l4.7-24.2h8.4c6.2,0,8.7,1.3,9.7,2.4C85.8,54.2,86.1,57.3,85.3,61.5z"
+                      ></path>
+                      <path
+                        fill="#FFFFFF"
+                        d="M215.3,42.9c-4.3-4.9-11-7.4-20.1-7.4h-28.3c-1,0-1.8,0.7-2,1.6l-13.1,67.5c-0.1,0.6,0,1.2,0.4,1.7 c0.4,0.5,0.9,0.7,1.5,0.7h14.7c1,0,1.8-0.7,2-1.6l3.2-16.3h10.9c5.7,0,10.6-0.6,14.3-1.8c3.9-1.3,7.4-3.4,10.5-6.3 c2.6-2.4,4.8-5.1,6.4-8c1.6-2.9,2.8-6.1,3.5-9.6C220.9,54.7,219.6,47.9,215.3,42.9z M200,61.5c-0.9,4.7-2.6,8.1-5.1,10 c-2.5,1.9-6.6,2.9-12,2.9h-6.5l4.7-24.2h8.4c6.2,0,8.7,1.3,9.7,2.4C200.6,54.2,200.9,57.3,200,61.5z"
+                      ></path>
+                    </g>
+                    <g>
+                      <path
+                        fill="#000004"
+                        d="M74.8,48.2c5.6,0,9.3,1,11.2,3.1c1.9,2.1,2.3,5.6,1.3,10.6c-1,5.2-3,9-5.9,11.2c-2.9,2.2-7.3,3.3-13.2,3.3 h-8.9l5.5-28.2H74.8z M39,105h14.7l3.5-17.9h12.6c5.6,0,10.1-0.6,13.7-1.8c3.6-1.2,6.8-3.1,9.8-5.9c2.5-2.3,4.5-4.8,6-7.5 c1.5-2.7,2.6-5.7,3.2-9c1.6-8,0.4-14.2-3.5-18.7c-3.9-4.5-10.1-6.7-18.6-6.7H52.1L39,105z"
+                      ></path>
+                      <path
+                        fill="#000004"
+                        d="M113.3,19.6h14.6l-3.5,17.9h13c8.2,0,13.8,1.4,16.9,4.3c3.1,2.9,4,7.5,2.8,13.9L151,87.1h-14.8l5.8-29.9 c0.7-3.4,0.4-5.7-0.7-6.9c-1.1-1.2-3.6-1.9-7.3-1.9h-11.7l-7.5,38.7h-14.6L113.3,19.6z"
+                      ></path>
+                      <path
+                        fill="#000004"
+                        d="M189.5,48.2c5.6,0,9.3,1,11.2,3.1c1.9,2.1,2.3,5.6,1.3,10.6c-1,5.2-3,9-5.9,11.2c-2.9,2.2-7.3,3.3-13.2,3.3 h-8.9l5.5-28.2H189.5z M153.7,105h14.7l3.5-17.9h12.6c5.6,0,10.1-0.6,13.7-1.8c3.6-1.2,6.8-3.1,9.8-5.9c2.5-2.3,4.5-4.8,6-7.5 c1.5-2.7,2.6-5.7,3.2-9c1.6-8,0.4-14.2-3.5-18.7c-3.9-4.5-10.1-6.7-18.6-6.7h-28.3L153.7,105z"
+                      ></path>
+                    </g>
+                  </g>
+                </g>
+              </svg>
+              <p>PHP</p>
+            </div>
+            <div class="skill">
+              <svg
+                viewBox="-4 0 264 264"
+                version="1.1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                preserveAspectRatio="xMidYMid"
+                fill="#000000"
+              >
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g
+                  id="SVGRepo_tracerCarrier"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></g>
+                <g id="SVGRepo_iconCarrier">
+                  <g>
+                    <path
+                      d="M255.855641,59.619717 C255.950565,59.9710596 256,60.3333149 256,60.6972536 L256,117.265345 C256,118.743206 255.209409,120.108149 253.927418,120.843385 L206.448786,148.178786 L206.448786,202.359798 C206.448786,203.834322 205.665123,205.195421 204.386515,205.937838 L105.27893,262.990563 C105.05208,263.119455 104.804608,263.201946 104.557135,263.289593 C104.464333,263.320527 104.376687,263.377239 104.278729,263.403017 C103.585929,263.58546 102.857701,263.58546 102.164901,263.403017 C102.051476,263.372083 101.948363,263.310215 101.840093,263.26897 C101.613244,263.186479 101.376082,263.1143 101.159544,262.990563 L2.07258227,205.937838 C0.7913718,205.201819 0,203.837372 0,202.359798 L0,32.6555248 C0,32.2843161 0.0515567729,31.9234187 0.144358964,31.5728326 C0.175293028,31.454252 0.24747251,31.3459828 0.288717928,31.2274022 C0.366053087,31.0108638 0.438232569,30.7891697 0.55165747,30.5880982 C0.628992629,30.4540506 0.742417529,30.3457814 0.83521972,30.2220451 C0.953800298,30.0570635 1.06206952,29.8869261 1.20127281,29.7425672 C1.31985339,29.6239866 1.4745237,29.5363401 1.60857131,29.4332265 C1.75808595,29.3094903 1.89213356,29.1754427 2.06227091,29.0774848 L2.06742659,29.0774848 L51.6134853,0.551122364 C52.8901903,-0.183535768 54.4613221,-0.183535768 55.7380271,0.551122364 L105.284086,29.0774848 L105.294397,29.0774848 C105.459379,29.1805983 105.598582,29.3094903 105.748097,29.4280708 C105.882144,29.5311844 106.031659,29.6239866 106.15024,29.7374115 C106.294599,29.8869261 106.397712,30.0570635 106.521448,30.2220451 C106.609095,30.3457814 106.727676,30.4540506 106.799855,30.5880982 C106.918436,30.7943253 106.985459,31.0108638 107.06795,31.2274022 C107.109196,31.3459828 107.181375,31.454252 107.212309,31.5779883 C107.307234,31.9293308 107.355765,32.2915861 107.356668,32.6555248 L107.356668,138.651094 L148.643332,114.878266 L148.643332,60.6920979 C148.643332,60.3312005 148.694889,59.9651474 148.787691,59.619717 C148.823781,59.4959808 148.890804,59.3877116 148.93205,59.269131 C149.014541,59.0525925 149.08672,58.8308984 149.200145,58.629827 C149.27748,58.4957794 149.390905,58.3875102 149.478552,58.2637739 C149.602288,58.0987922 149.705401,57.9286549 149.84976,57.7842959 C149.968341,57.6657153 150.117856,57.5780688 150.251903,57.4749553 C150.406573,57.351219 150.540621,57.2171714 150.705603,57.1192136 L150.710758,57.1192136 L200.261973,28.5928511 C201.538395,27.8571345 203.110093,27.8571345 204.386515,28.5928511 L253.932573,57.1192136 C254.107866,57.2223271 254.241914,57.351219 254.396584,57.4697996 C254.525476,57.5729132 254.674991,57.6657153 254.793572,57.7791402 C254.93793,57.9286549 255.041044,58.0987922 255.16478,58.2637739 C255.257582,58.3875102 255.371007,58.4957794 255.443187,58.629827 C255.561767,58.8308984 255.628791,59.0525925 255.711282,59.269131 C255.757683,59.3877116 255.824707,59.4959808 255.855641,59.619717 Z M247.740605,114.878266 L247.740605,67.8378666 L230.402062,77.8192579 L206.448786,91.6106946 L206.448786,138.651094 L247.745761,114.878266 L247.740605,114.878266 Z M198.194546,199.97272 L198.194546,152.901386 L174.633101,166.357704 L107.351512,204.757188 L107.351512,252.27191 L198.194546,199.97272 Z M8.25939501,39.7961379 L8.25939501,199.97272 L99.0921175,252.266755 L99.0921175,204.762344 L51.6392637,177.906421 L51.6237967,177.89611 L51.603174,177.885798 C51.443348,177.792996 51.3093004,177.658949 51.1597857,177.545524 C51.0308938,177.44241 50.8813791,177.359919 50.7679542,177.246494 L50.7576429,177.231027 C50.6235953,177.102135 50.5307931,176.942309 50.4173682,176.79795 C50.3142546,176.658747 50.1905184,176.540167 50.1080276,176.395808 L50.1028719,176.380341 C50.0100697,176.22567 49.9533572,176.040066 49.8863334,175.864773 C49.8193096,175.710103 49.7316631,175.565744 49.6904177,175.400762 L49.6904177,175.395606 C49.6388609,175.19969 49.6285496,174.993463 49.6079269,174.792392 C49.5873041,174.637722 49.5460587,174.483051 49.5460587,174.328381 L49.5460587,174.31807 L49.5460587,63.5689658 L25.5979377,49.7723734 L8.25939501,39.8012935 L8.25939501,39.7961379 Z M53.6809119,8.89300821 L12.3994039,32.6555248 L53.6706006,56.4180414 L94.9469529,32.6503692 L53.6706006,8.89300821 L53.6809119,8.89300821 Z M75.1491521,157.19091 L99.0972731,143.404629 L99.0972731,39.7961379 L81.7587304,49.7775291 L57.8054537,63.5689658 L57.8054537,167.177457 L75.1491521,157.19091 Z M202.324244,36.934737 L161.047891,60.6972536 L202.324244,84.4597702 L243.59544,60.6920979 L202.324244,36.934737 Z M198.194546,91.6106946 L174.24127,77.8192579 L156.902727,67.8378666 L156.902727,114.878266 L180.850848,128.664547 L198.194546,138.651094 L198.194546,91.6106946 Z M103.216659,197.616575 L163.759778,163.052915 L194.023603,145.781396 L152.778185,122.034346 L105.289242,149.374903 L62.0073307,174.292291 L103.216659,197.616575 Z"
+                      fill="#FF2D20"
+                    ></path>
+                  </g>
+                </g>
+              </svg>
+              <p>Laravel</p>
+            </div>
+            <div class="skill">
+              <svg
+                width="251px"
+                height="251px"
+                viewBox="0 0 191.15 191.15"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="#000000"
+              >
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g
+                  id="SVGRepo_tracerCarrier"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></g>
+                <g id="SVGRepo_iconCarrier">
+                  <path
+                    d="M-18.458 6.58h191.151v132.49H-18.458V6.58z"
+                    fill="none"
+                  ></path>
+                  <path
+                    d="M40.054 113.583h-5.175c-.183-8.735-.687-16.947-1.511-24.642h-.046l-7.879 24.642h-3.94l-7.832-24.642h-.045c-.581 7.388-.947 15.602-1.099 24.642H7.81c.304-10.993 1.068-21.299 2.289-30.919h6.414l7.465 22.719h.046l7.511-22.719h6.137c1.344 11.268 2.138 21.575 2.382 30.919M62.497 90.771c-2.107 11.434-4.887 19.742-8.337 24.928-2.688 3.992-5.633 5.99-8.84 5.99-.855 0-1.91-.258-3.16-.77v-2.757c.611.088 1.328.138 2.152.138 1.498 0 2.702-.412 3.62-1.238 1.098-1.006 1.647-2.137 1.647-3.388 0-.858-.428-2.612-1.282-5.268L42.618 90.77h5.084l4.076 13.19c.916 2.995 1.298 5.086 1.145 6.277 2.229-5.953 3.786-12.444 4.673-19.468h4.901v.002z"
+                    fill="#5d87a1"
+                  ></path>
+                  <path
+                    d="M131.382 113.583h-14.7V82.664h4.945v27.113h9.755v3.806zM112.834 114.33l-5.684-2.805c.504-.414.986-.862 1.42-1.381 2.416-2.838 3.621-7.035 3.621-12.594 0-10.229-4.014-15.346-12.045-15.346-3.938 0-7.01 1.298-9.207 3.895-2.414 2.84-3.619 7.022-3.619 12.551 0 5.435 1.068 9.422 3.205 11.951 1.955 2.291 4.902 3.438 8.843 3.438 1.47 0 2.819-.18 4.048-.543l7.4 4.308 2.018-3.474zm-18.413-6.934c-1.252-2.014-1.878-5.248-1.878-9.707 0-7.785 2.365-11.682 7.1-11.682 2.475 0 4.289.932 5.449 2.792 1.25 2.017 1.879 5.222 1.879 9.619 0 7.849-2.367 11.774-7.099 11.774-2.476.001-4.29-.928-5.451-2.796M85.165 105.013c0 2.622-.962 4.773-2.884 6.458-1.924 1.678-4.504 2.519-7.737 2.519-3.024 0-5.956-.966-8.794-2.888l1.329-2.655c2.442 1.223 4.653 1.831 6.638 1.831 1.863 0 3.319-.413 4.375-1.232 1.055-.822 1.684-1.975 1.684-3.433 0-1.837-1.281-3.407-3.631-4.722-2.167-1.19-6.501-3.678-6.501-3.678-2.349-1.712-3.525-3.55-3.525-6.578 0-2.506.877-4.529 2.632-6.068 1.757-1.545 4.024-2.315 6.803-2.315 2.87 0 5.479.769 7.829 2.291l-1.192 2.656c-2.01-.854-3.994-1.281-5.951-1.281-1.585 0-2.809.381-3.66 1.146-.858.762-1.387 1.737-1.387 2.933 0 1.828 1.308 3.418 3.722 4.759 2.196 1.192 6.638 3.723 6.638 3.723 2.409 1.709 3.612 3.53 3.612 6.534"
+                    fill="#f8981d"
+                  ></path>
+                  <path
+                    d="M137.59 72.308c-2.99-.076-5.305.225-7.248 1.047-.561.224-1.453.224-1.531.933.303.3.338.784.601 1.198.448.747 1.229 1.752 1.942 2.276.783.6 1.569 1.194 2.393 1.717 1.453.899 3.1 1.422 4.516 2.318.825.521 1.645 1.195 2.471 1.756.406.299.666.784 1.193.971v-.114c-.264-.336-.339-.822-.598-1.196l-1.122-1.082c-1.084-1.456-2.431-2.727-3.884-3.771-1.196-.824-3.812-1.944-4.297-3.322l-.076-.076c.822-.077 1.797-.375 2.578-.604 1.271-.335 2.43-.259 3.734-.594.6-.15 1.195-.338 1.797-.523v-.337c-.676-.673-1.158-1.567-1.869-2.203-1.902-1.643-3.998-3.25-6.164-4.595-1.16-.749-2.652-1.231-3.887-1.868-.445-.225-1.195-.336-1.457-.71-.67-.822-1.047-1.904-1.533-2.877-1.08-2.053-2.129-4.331-3.061-6.502-.674-1.456-1.084-2.91-1.906-4.257-3.85-6.35-8.031-10.196-14.457-13.971-1.381-.786-3.024-1.121-4.779-1.533l-2.803-.148c-.598-.262-1.197-.973-1.719-1.309-2.132-1.344-7.621-4.257-9.189-.411-1.01 2.431 1.494 4.821 2.354 6.054.635.856 1.458 1.83 1.902 2.802.263.635.337 1.309.6 1.98.598 1.644 1.157 3.473 1.943 5.007.41.782.857 1.604 1.381 2.312.3.414.822.597.936 1.272-.521.744-.562 1.867-.861 2.801-1.344 4.221-.819 9.45 1.086 12.552.596.934 2.018 2.99 3.92 2.202 1.684-.672 1.311-2.801 1.795-4.668.111-.451.038-.747.262-1.043v.073c.521 1.045 1.047 2.052 1.53 3.1 1.159 1.829 3.177 3.735 4.858 5.002.895.676 1.604 1.832 2.725 2.245V74.1h-.074c-.227-.335-.559-.485-.857-.745-.674-.673-1.42-1.495-1.943-2.241-1.566-2.093-2.952-4.41-4.182-6.801-.602-1.16-1.121-2.428-1.606-3.586-.226-.447-.226-1.121-.601-1.346-.562.821-1.381 1.532-1.791 2.538-.711 1.609-.785 3.588-1.049 5.646l-.147.072c-1.19-.299-1.604-1.53-2.056-2.575-1.119-2.654-1.307-6.914-.336-9.976.26-.783 1.385-3.249.936-3.995-.225-.715-.973-1.122-1.383-1.685-.482-.708-1.01-1.604-1.346-2.39-.896-2.091-1.347-4.408-2.312-6.498-.451-.974-1.234-1.982-1.868-2.879-.712-1.008-1.495-1.718-2.058-2.913-.186-.411-.447-1.083-.148-1.53.073-.3.225-.412.523-.487.484-.409 1.867.111 2.352.336 1.385.56 2.543 1.083 3.699 1.867.523.375 1.084 1.085 1.755 1.272h.786c1.193.26 2.538.072 3.661.41 1.979.636 3.772 1.569 5.38 2.576 4.893 3.103 8.928 7.512 11.652 12.778.447.858.637 1.644 1.045 2.539.787 1.832 1.76 3.7 2.541 5.493.785 1.755 1.533 3.547 2.654 5.005.559.784 2.805 1.195 3.812 1.606.745.335 1.905.633 2.577 1.044 1.271.783 2.537 1.682 3.732 2.543.595.448 2.465 1.382 2.576 2.13M99.484 39.844a5.82 5.82 0 0 0-1.529.188v.075h.072c.301.597.824 1.011 1.197 1.532.301.599.562 1.193.857 1.791l.072-.074c.527-.373.789-.971.789-1.868-.227-.264-.262-.522-.451-.784-.22-.374-.705-.56-1.007-.86"
+                    fill="#5d87a1"
+                  ></path>
+                  <path
+                    d="M141.148 113.578h.774v-3.788h-1.161l-.947 2.585-1.029-2.585h-1.118v3.788h.731v-2.882h.041l1.078 2.882h.557l1.074-2.882v2.882zm-6.235 0h.819v-3.146h1.072v-.643h-3.008v.643h1.115l.002 3.146z"
+                    fill="#f8981d"
+                  ></path>
+                </g>
+              </svg>
+              <p>MySQL</p>
+            </div>
+            <div class="skill">
+              <svg
+                viewBox="0 -180.5 512 512"
+                version="1.1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                preserveAspectRatio="xMidYMid"
+                fill="#000000"
+              >
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g
+                  id="SVGRepo_tracerCarrier"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></g>
+                <g id="SVGRepo_iconCarrier">
+                  <g>
+                    <path
+                      d="M391.38251,77.7574419 C397.823849,77.7574419 403.051432,80.5074888 407.065007,86.0074686 L407.065007,78.7979903 L412.044681,78.7979903 L412.044681,118.264354 L407.065007,118.264354 L407.065007,111.500821 C402.555867,116.901738 397.402745,119.602203 391.605388,119.602203 C385.808157,119.602203 380.902692,117.545885 376.889117,113.433261 C372.925226,109.271093 370.943217,104.340899 370.943217,98.6426552 C370.943217,92.8949179 372.950004,87.9895028 376.963452,83.9263846 C380.977026,79.8137983 385.783379,77.7574419 391.38251,77.7574419 Z M301.496765,77.7574419 C307.93823,77.7574419 313.165687,80.5074888 317.179262,86.0074686 L317.179262,78.7979903 L322.159062,78.7979903 L322.159062,118.264354 L317.179262,118.264354 L317.179262,111.500821 C312.670248,116.901738 307.517,119.602203 301.719769,119.602203 C295.922412,119.602203 291.016947,117.545885 287.003499,113.433261 C283.039481,109.271093 281.057472,104.340899 281.057472,98.6426552 C281.057472,92.8949179 283.064259,87.9895028 287.077833,83.9263846 C291.091281,79.8137983 295.897634,77.7574419 301.496765,77.7574419 Z M434.468998,64.8992889 C442.050138,64.8992889 447.599586,65.4691638 451.117721,66.6087494 C454.685287,67.6988922 457.757287,69.4579093 460.333974,71.8858007 C462.910535,74.2642366 464.892544,77.1876681 466.279874,80.6560952 C467.667331,84.1246234 468.360996,88.187691 468.360996,92.8453361 C468.360996,97.4534878 467.270879,101.813857 465.09077,105.926468 C462.960092,109.989561 460.036635,113.061637 456.3204,115.142721 C452.653721,117.223818 447.35193,118.264354 440.415025,118.264354 L423.394628,118.264354 L423.394628,64.8992889 L434.468998,64.8992889 Z M361.34756,78.7979903 L361.34756,118.264354 L356.21909,118.264354 L356.21909,78.7979903 L361.34756,78.7979903 Z M221.625572,64.8992889 L243.328303,108.676477 L264.882492,64.8992889 L265.700049,64.8992889 L273.355523,118.264354 L268.07851,118.264354 L262.875705,80.0615052 L243.997317,118.264354 L242.659416,118.264354 L223.558024,79.7642038 L218.355345,118.264354 L213.226875,118.264354 L220.808015,64.8992889 L221.625572,64.8992889 Z M344.360375,77.7574419 C345.995488,77.7574419 347.630601,78.2034382 349.265714,79.095279 L346.59004,83.4061167 C345.846819,82.960209 345.078819,82.7372298 344.28604,82.7371919 C342.749914,82.7372298 341.288249,83.5300207 339.900792,85.1155773 C338.563018,86.7012096 337.572014,88.7575154 336.927905,91.2845199 C336.28367,93.762031 335.961679,98.2958352 335.961679,104.88592 L335.961679,118.264354 L330.758874,118.264354 L330.758874,78.7979903 L335.961679,78.7979903 L335.961679,84.5209746 C337.349009,82.1921837 338.68691,80.4827231 339.975127,79.3925803 C341.313027,78.3025386 342.774692,77.7574419 344.360375,77.7574419 Z M490.04385,64.8992889 C495.642981,64.8992889 499.879434,66.0389882 502.753334,68.3182099 C505.676791,70.5480015 507.138456,73.7687344 507.138456,77.9804085 C507.138456,80.3093005 506.543904,82.4647067 505.354673,84.4466524 C504.214999,86.37913 502.530329,87.9399462 500.300664,89.129101 C503.967343,90.3183316 506.74213,92.102127 508.625026,94.4804744 C510.557352,96.8588977 511.523704,99.6832288 511.523704,102.95348 C511.523704,107.363431 509.913243,111.03011 506.692573,113.953528 C503.471777,116.827416 499.30966,118.264354 494.206094,118.264354 L479.489697,118.264354 L479.489697,64.8992889 L490.04385,64.8992889 Z M391.679723,82.6628697 C387.319379,82.6628697 383.627922,84.2732677 380.605352,87.4939626 C377.582909,90.6651769 376.071561,94.4309558 376.071561,98.7913122 C376.071561,103.151706 377.607687,106.942251 380.679687,110.162971 C383.751814,113.33416 387.418492,114.919742 391.679723,114.919742 C395.99051,114.919742 399.681967,113.383717 402.754093,110.311616 C405.82622,107.239552 407.36222,103.374673 407.36222,98.7169774 C407.36222,94.2079893 405.850998,90.4174321 402.828428,87.3453183 C399.805858,84.2237238 396.089623,82.6628697 391.679723,82.6628697 Z M301.794104,82.6628697 C297.433634,82.6628697 293.742177,84.2732677 290.719734,87.4939626 C287.697164,90.6651769 286.185942,94.4309558 286.185942,98.7913122 C286.185942,103.151706 287.721942,106.942251 290.794069,110.162971 C293.866069,113.33416 297.532747,114.919742 301.794104,114.919742 C306.104891,114.919742 309.796348,113.383717 312.868474,110.311616 C315.940474,107.239552 317.476601,103.374673 317.476601,98.7169774 C317.476601,94.2079893 315.965253,90.4174321 312.942809,87.3453183 C309.920239,84.2237238 306.204004,82.6628697 301.794104,82.6628697 Z M432.313542,70.1020053 L428.522972,70.1020053 L428.522972,113.210281 L434.692003,113.210281 C441.133468,113.210281 445.791025,112.888214 448.665052,112.244068 C451.588382,111.599921 454.140165,110.336406 456.3204,108.453511 C458.500635,106.521084 460.160526,104.192242 461.3002,101.466999 C462.439748,98.7417809 463.009648,95.6201485 463.009648,92.1020891 C463.009648,88.5840928 462.340635,85.3385943 461.002861,82.3655684 C459.714517,79.3926309 457.8564,76.9399107 455.428508,75.0074331 C453.000617,73.0750439 450.126717,71.7867508 446.806934,71.1425536 C443.536582,70.4489011 438.705451,70.1020053 432.313542,70.1020053 Z M487.73985,92.5480347 L484.766837,92.5480347 L484.766837,113.061637 L491.381751,113.061637 C495.196972,113.061637 497.996538,112.690014 499.780321,111.946767 C501.61366,111.153976 503.10023,109.964783 504.239904,108.379176 C505.379451,106.74405 505.949352,105.084146 505.949352,103.399439 C505.949352,101.714756 505.627234,100.228275 504.983125,98.9399565 C504.33889,97.6516887 503.372664,96.5120399 502.084447,95.5210228 C500.84566,94.5300563 499.334438,93.7868093 497.550655,93.2912817 C495.816429,92.7958175 492.546077,92.5480347 487.73985,92.5480347 Z M490.935742,70.1020053 L484.766837,70.1020053 L484.766837,87.1966613 L487.814059,87.1966613 C492.471742,87.1966613 495.940194,86.4534522 498.219542,84.9669329 C500.498764,83.4804768 501.638438,81.1516353 501.638438,77.9804085 C501.638438,72.728186 498.070873,70.1020053 490.935742,70.1020053 Z M358.746095,63.5614392 C359.935325,63.5614392 360.92633,63.9826698 361.719108,64.824954 C362.561443,65.6178082 362.982673,66.6088 362.982673,67.7979421 C362.982673,68.9376415 362.561443,69.9286333 361.719108,70.7709301 C360.92633,71.5637716 359.935325,71.9601228 358.746095,71.9601228 C357.606547,71.9601228 356.615543,71.5389934 355.773208,70.696608 C354.980303,69.8543111 354.583977,68.8880849 354.583977,67.7979421 C354.583977,66.6583565 354.980303,65.6673647 355.773208,64.824954 C356.615543,63.9826698 357.606547,63.5614392 358.746095,63.5614392 Z"
+                      fill="#A57242"
+                      fill-rule="nonzero"
+                    ></path>
+                    <path
+                      d="M222.340741,0.00397152498 C218.827447,0.116232266 219.938538,1.12853844 212.347044,2.99674427 C204.681026,4.8832936 195.31685,4.30480945 187.061728,7.76692817 C162.418726,18.101743 157.474437,53.4246735 135.071605,66.0780393 C118.326044,75.5367652 101.431321,76.2911751 86.2419753,81.0508788 C76.2598716,84.1810319 65.3403654,90.6003235 56.2962963,98.3940887 C49.2762074,104.445802 49.0929114,109.766822 41.7580247,117.357052 C33.9124148,125.475728 10.5762765,117.494242 0,129.920015 C3.40701235,133.364953 4.90067437,134.329864 11.6148148,133.436064 C10.2247411,136.070765 2.03054143,138.291101 3.6345679,142.166928 C5.32234746,146.245128 25.1324871,149.009701 43.1407407,138.137299 C51.5274272,133.073871 58.2074596,125.775672 71.2691358,124.033595 C88.1714568,121.780795 107.64264,125.478585 127.209877,128.300262 C124.308543,136.951165 118.48345,142.704212 113.817284,149.594089 C112.372306,151.150316 116.719553,151.324762 121.679012,150.384212 C130.600454,148.178187 137.02986,146.40199 143.762963,142.482978 C152.034607,137.667649 153.288072,125.322141 163.437037,122.650879 C169.091793,131.342237 184.471426,133.395306 194.014815,126.443471 C185.64077,124.073101 183.326366,106.248548 186.153086,98.3940887 C188.830657,90.959343 191.476344,79.0664047 194.17284,69.2385331 C197.067852,58.6837479 198.135884,45.3804077 201.639506,40.0039652 C206.910767,31.9150099 212.735305,29.1372393 217.792057,24.5759514 C222.848796,20.0146635 227.47734,15.5746121 227.325446,5.13744787 C227.276522,1.7756938 225.538326,-0.0982135614 222.340741,0.00397152498 L222.340741,0.00397152498 Z"
+                      fill="#002B64"
+                    ></path>
+                    <path
+                      d="M215.447072,6.20596027 C216.291556,9.08453804 217.612642,10.4056245 223.324286,10.934059 C222.489916,18.1753825 217.659417,22.1361134 212.243595,25.9362911 C207.47757,29.2788294 202.256435,32.4974763 198.901254,37.7186121 C195.463901,43.0674319 193.281896,61.3730121 187.95204,79.4510368 C183.345304,95.0714615 176.388425,110.516163 164.239486,117.283412 C162.970232,114.088785 164.401304,108.192568 161.876701,106.254553 C160.243358,110.913121 158.396365,115.358039 156.233323,119.489437 C149.104514,133.114958 138.549728,143.317032 120.911644,146.432015 C129.280632,135.107333 137.283002,123.412242 137.456198,103.893032 C131.566301,105.167343 131.691457,119.079837 125.639743,122.799106 C121.759921,123.221348 117.829531,123.21882 113.873857,122.98115 C97.6289185,122.007718 80.9642667,117.125387 65.7673481,122.001397 C55.4198914,125.322444 46.9573531,133.156676 38.1952,136.956854 C27.8970469,141.423264 20.0982123,143.260143 7.27419259,141.423264 C5.64590617,139.229881 16.6595951,136.399343 16.0009481,131.637111 C10.982084,131.082128 8.06810864,132.298286 3.70536296,130.316024 C4.18702222,129.428558 4.89497284,128.689002 5.7862321,128.073338 C13.7822815,122.538681 36.4948543,126.766158 42.573116,120.797881 C46.3252543,117.116538 48.7866469,113.263264 51.3352691,109.517447 C53.8067753,105.882879 56.3617185,102.349447 60.2541827,99.1649331 C61.6915753,97.9892294 63.2541235,96.8274319 64.9127506,95.6934467 C71.5459951,91.1537134 79.7519012,87.036222 87.8275951,84.1980985 C98.828642,80.3309183 109.976336,80.0123405 121.701768,75.5320245 C128.94562,72.7634319 136.822835,69.3437775 143.243694,64.5587899 C144.768316,63.4210121 146.210765,62.2086467 147.544494,60.9090516 C165.879151,43.0358269 169.513719,11.5080047 198.118716,8.57000965 C201.57756,8.21477014 204.409363,8.32981212 206.987062,8.25143187 C209.957926,8.16293804 212.587457,7.81781212 215.447072,6.20596027 Z M180.57527,107.112892 C180.916603,112.576754 184.088475,123.417248 186.888672,126.051836 C181.404584,127.385564 171.957235,125.182068 169.533769,121.313623 C170.779003,115.728399 177.25928,110.622305 180.57527,107.112892 Z"
+                      fill="#C49A6C"
+                      fill-rule="nonzero"
+                    ></path>
+                    <path
+                      d="M216.84004,12.2250323 C215.762944,14.4841533 213.701038,17.3968644 213.701038,23.1476989 C213.692188,24.1350372 212.951369,24.8113829 212.938727,23.2892891 C212.994351,17.6686668 214.482312,15.2388792 216.062559,12.0455162 C216.797058,10.7370718 217.239527,11.2768841 216.84004,12.2250323 Z M215.755359,11.3742273 C214.48484,13.5296841 211.425482,17.4613384 210.919803,23.1906816 C210.826253,24.1729631 210.02728,24.7810421 210.148643,23.2627409 C210.699833,17.669931 213.144791,14.1693681 215.000633,11.1264446 C215.842588,9.88879523 216.238282,10.4652693 215.755359,11.3742273 Z M214.766756,10.2465631 C213.31925,12.2869779 208.610114,17.0087557 207.625304,22.6761533 C207.448317,23.6457928 206.601304,24.1868693 206.850351,22.6837384 C207.869295,17.1554026 211.928633,12.8103557 214.033522,9.93683473 C214.976613,8.77250881 215.321739,9.38058782 214.766756,10.2465631 Z M213.884346,8.98868659 L213.408121,9.49522682 C211.30253,11.752654 206.411009,17.2586676 204.78086,22.2981582 C204.467339,23.2336644 203.553324,23.6508495 204.012228,22.1970224 C205.797275,16.8671656 210.713739,11.1264446 213.20168,8.57782239 C214.300267,7.55761498 214.555635,8.20867671 213.884346,8.98868659 Z M188.609245,20.3993335 C189.700248,15.7129533 193.344929,13.5777236 199.63684,14.098573 C201.155142,21.0933779 192.65847,23.9150668 188.609245,20.3993335 Z"
+                      fill="#002B64"
+                    ></path>
+                  </g>
+                </g>
+              </svg>
+              <p>MariaDB</p>
+            </div>
+            <div class="skill">
+              <svg
+                viewBox="0 0 32 32"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g
+                  id="SVGRepo_tracerCarrier"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></g>
+                <g id="SVGRepo_iconCarrier">
+                  <path
+                    d="M2.58536 17.4132C1.80488 16.6327 1.80488 15.3673 2.58536 14.5868L14.5868 2.58536C15.3673 1.80488 16.6327 1.80488 17.4132 2.58536L29.4146 14.5868C30.1951 15.3673 30.1951 16.6327 29.4146 17.4132L17.4132 29.4146C16.6327 30.1951 15.3673 30.1951 14.5868 29.4146L2.58536 17.4132Z"
+                    fill="#EE513B"
+                  ></path>
+                  <path
+                    d="M12.1489 5.06152L10.9336 6.27686L14.0725 9.41577C13.9455 9.68819 13.8746 9.99201 13.8746 10.3124C13.8746 11.222 14.4461 11.9981 15.2496 12.3012V19.9798C14.4461 20.2829 13.8746 21.059 13.8746 21.9686C13.8746 23.1422 14.826 24.0936 15.9996 24.0936C17.1732 24.0936 18.1246 23.1422 18.1246 21.9686C18.1246 21.144 17.6549 20.429 16.9684 20.0768V12.3117L19.9689 15.3122C19.8481 15.5791 19.7809 15.8754 19.7809 16.1874C19.7809 17.361 20.7323 18.3124 21.9059 18.3124C23.0795 18.3124 24.0309 17.361 24.0309 16.1874C24.0309 15.0138 23.0795 14.0624 21.9059 14.0624C21.6778 14.0624 21.4582 14.0983 21.2522 14.1648L18.0297 10.9423C18.0914 10.7433 18.1246 10.5317 18.1246 10.3124C18.1246 9.13878 17.1732 8.18738 15.9996 8.18738C15.7803 8.18738 15.5688 8.22061 15.3697 8.2823L12.1489 5.06152Z"
+                    fill="white"
+                  ></path>
+                </g>
+              </svg>
+              <p>Git</p>
             </div>
           </div>
-          <!-- /timeline-block -->
+          <!-- /skill-bars -->
         </div>
-        <!-- /timeline-wrap -->
       </div>
-      <!-- /col-twelve -->
-    </div>
-    <!-- /resume-timeline -->
-    <div class="row button-section">
-      <div class="col-twelve">
-        <a href="cv/DNMjustMe-ES.pdf" title="CV Español" class="button button-primary" download="DNMjustMe-ES.pdf">CV
-          Español
-          <svg aria-hidden="true" focusable="false" data-prefix="fa-solid" data-icon="down-to-line"
-            class="svg-inline--fa fa-down-to-line fa-w-12" role="img" xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 384 512" style="height: 2rem; position: relative; top: 2px">
-            <path
-              d="M352 416H32C14.327 416 0 430.327 0 448V448C0 465.673 14.327 480 32 480H352C369.673 480 384 465.673 384 448V448C384 430.327 369.673 416 352 416ZM328 192.114H256V64.023C256 46.336 241.672 32 224 32H160C142.326 32 128 46.336 128 64.023V192.114H56C46.422 192.114 37.75 197.822 33.953 206.625C30.172 215.428 31.969 225.654 38.547 232.628L174.547 376.731C183.609 386.331 200.391 386.331 209.453 376.731L345.453 232.628C352.031 225.654 353.828 215.428 350.047 206.625C346.25 197.822 337.578 192.114 328 192.114Z"
-              fill="currentColor" />
-          </svg>
-        </a>
-        <a href="cv/DNMjustMe-EN.pdf" title="CV Inglés" class="button button-primary" download="DNMjustMe-EN.pdf">CV
-          Inglés
-          <svg aria-hidden="true" focusable="false" data-prefix="fa-solid" data-icon="down-to-line"
-            class="svg-inline--fa fa-down-to-line fa-w-12" role="img" xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 384 512" style="height: 2rem; position: relative; top: 2px">
-            <path
-              d="M352 416H32C14.327 416 0 430.327 0 448V448C0 465.673 14.327 480 32 480H352C369.673 480 384 465.673 384 448V448C384 430.327 369.673 416 352 416ZM328 192.114H256V64.023C256 46.336 241.672 32 224 32H160C142.326 32 128 46.336 128 64.023V192.114H56C46.422 192.114 37.75 197.822 33.953 206.625C30.172 215.428 31.969 225.654 38.547 232.628L174.547 376.731C183.609 386.331 200.391 386.331 209.453 376.731L345.453 232.628C352.031 225.654 353.828 215.428 350.047 206.625C346.25 197.822 337.578 192.114 328 192.114Z"
-              fill="currentColor" />
-          </svg>
-        </a>
+
+      <div class="row button-section">
+        <div class="col-twelve">
+          <a
+            id="hire-me-button"
+            href="#contact"
+            title="Hire Me"
+            class="button stroke smoothscroll"
+            >Contráteme</a
+          >
+        </div>
       </div>
-    </div>
+    </section>
+    <!-- /process-->
 
-  </section>
-  <!-- /features -->
-
-  <!-- Portfolio Section
+    <!-- resume Section
    ================================================== -->
-  <section id="portfolio">
-    <div class="row section-intro">
-      <div class="col-twelve">
-        <h5>Portafolio</h5>
-        <h1>Revise algo de mi trabajo.</h1>
-
-        <p class="lead">
-          Una muestra de lo que soy capaz de hacer. Recopilación de mis trabajos más importantes. Proyectos tanto
-          personales como trabajos oficiales.
-        </p>
-      </div>
-    </div>
-    <!-- /section-intro-->
-
-    <div class="row portfolio-content">
-      <div class="col-twelve">
-        <!-- portfolio-wrapper -->
-        <div id="folio-wrapper" class="block-1-2 block-mob-full stack">
-          <div class="bgrid folio-item">
-            <div class="item-wrap text-center">
-              <img src="images/portfolio/justAlerts.png" alt="justAlerts" />
-              <a href="#modal-01" class="overlay">
-                <div class="folio-item-table">
-                  <div class="folio-item-cell">
-                    <h3 class="folio-title">justAlerts</h3>
-                    <span class="folio-types"> Librería de alertas JavaScript </span>
-                  </div>
-                </div>
-              </a>
-            </div>
-          </div>
-
-          <div class="bgrid folio-item">
-            <div class="item-wrap text-center">
-              <img src="images/portfolio/biblio.png" alt="justAlerts" />
-              <a href="#modal-02" class="overlay">
-                <div class="folio-item-table">
-                  <div class="folio-item-cell">
-                    <h3 class="folio-title">Bibliotea André Voisin</h3>
-                    <span class="folio-types"> Sitio web de la Biblioteca André Voisin </span>
-                  </div>
-                </div>
-              </a>
-            </div>
-          </div>
-
-          <div class="bgrid folio-item" style="margin-top: 1em;">
-            <div class="item-wrap text-center">
-              <img src="images/portfolio/justSnake.png" alt="justSnake" />
-              <a href="#modal-03" class="overlay">
-                <div class="folio-item-table">
-                  <div class="folio-item-cell">
-                    <h3 class="folio-title">justSnake</h3>
-                    <span class="folio-types"> El clásico juego de Nokia adaptado a la web... </span>
-                  </div>
-                </div>
-              </a>
-            </div>
-          </div>
-          <!-- /folio-item -->
-
-          <!-- modal popups - begin
-	            ============================================================= -->
-          <div id="modal-01" class="popup-modal slider mfp-hide">
-            <div class="media text-center">
-              <img src="images/portfolio/modals/m-justAlerts.png" alt="justAlerts" />
-            </div>
-
-            <div class="description-box">
-              <h4>justAlerts</h4>
-              <p>
-                Una librería desarrollada con JavaScript para la generación de alertas y notificaciones atractivas para
-                el usuario y fácil de usar por los desarrolladores.
-              </p>
-              <p>
-                Proyecto personal destinado a practicar mis habilidades de desarrollo con JavaScript.
-              </p>
-              <p>Lenguajes y herramientas utilizadas: HTML5, CSS3, JS, Bootstrap, jQuery.</p>
-
-              <div class="categories">Desarrollo web</div>
-            </div>
-
-            <div class="link-box">
-              <a href="https://dnmjustme.github.io/justAlerts/" target="_blank">Visitar</a>
-              <a href="#" class="popup-modal-dismiss">Cerrar</a>
-            </div>
-          </div>
-
-          <div id="modal-02" class="popup-modal slider mfp-hide">
-            <div class="media text-center">
-              <img src="images/portfolio/modals/m-biblio.png" alt="justAlerts" />
-            </div>
-
-            <div class="description-box">
-              <h4>Bibliotea André Voisin</h4>
-              <p>
-                Sitio web de la Biblioteca André Voisin, perteneciente a la Estación Experimental de Pastos y Forrajes
-                Indio Hatuey. Biblioteca digital que permite la descarga y consulta de materiales relacionados con la
-                agricultura, veterinaria, agropecuaria, entre otros temas afines.
-              </p>
-              <p>
-                Proyecto profesional, desarrollado como práctica laboral durante la carrera. En este, practico mis
-                habilidades de full-stack, ya que se debía desarrollar una sección de administrador, que permitiera
-                subir nuevos documentos, entre otras funcionalidades.
-              </p>
-              <p>Lenguajes y herramientas utilizadas: HTML5, CSS3, JS, Bootstrap, jQuery, PHP, MySQL.</p>
-
-              <div class="categories">Desarrollo web</div>
-            </div>
-
-            <div class="link-box">
-              <a href="https://biblioteca.ihatuey.cu/" target="_blank">Visitar</a>
-              <a href="#" class="popup-modal-dismiss">Cerrar</a>
-            </div>
-          </div>
-
-          <div id="modal-03" class="popup-modal slider mfp-hide">
-            <div class="media text-center">
-              <img src="images/portfolio/modals/m-justSnake.png" alt="justAlerts" />
-            </div>
-
-            <div class="description-box">
-              <h4>justSnake</h4>
-              <p>
-                El clásico juego de Nokia adaptado a la web, amigable tanto con computadoras como téfonos celulares y
-                otros dispositivos móviles.
-              </p>
-              <p>
-                Proyecto personal, desarrollado con el objetivo de mejorar mis habilidades de manejo del DOM con
-                JavaScript.
-              </p>
-              <p>Lenguajes y herramientas utilizadas: HTML5, CSS3, JS, jQuery, PHP.</p>
-
-              <div class="categories">Desarrollo web</div>
-            </div>
-
-            <div class="link-box">
-              <a href="https://dnmjustme.github.io/justSnake/" target="_blank">Visitar</a>
-              <a href="#" class="popup-modal-dismiss">Cerrar</a>
-            </div>
-          </div>
-
-
-
-          <!-- modal popups - end
-	            ============================================================= -->
+    <section id="resume" class="grey-section">
+      <div class="row section-intro">
+        <div class="col-twelve">
+          <h5 id="cv-heading">Currículum vítae</h5>
+          <h1 id="cv-subHeading">Más acerca de mi formación.</h1>
         </div>
       </div>
-    </div>
-  </section>
-  <!-- /portfolio -->
+      <!-- /section-intro-->
 
-  <!-- services Section
-   ================================================== -->
-  <section id="services">
-    <div class="overlay"></div>
-
-    <div class="row section-intro">
-      <div class="col-twelve">
-        <h5>Servicios</h5>
-        <h1>¿Qué puedo hacer por usted?</h1>
-
-        <p class="lead">
-          Cada servicio incluye asistencia técnica en cada etapa. La comunicación entre las dos partes es primordial
-          para la fluidez del proceso. Se utiliza una metodología ágil de desarrollo (XP), por lo que el cliente juega
-          un papel protagónico.
-        </p>
-      </div>
-    </div>
-    <!-- /section-intro -->
-
-    <div class="row services-content">
-      <div id="owl-slider" class="owl-carousel services-list">
-
-        <div class="service">
-          <svg aria-hidden="true" focusable="false" data-prefix="fa-regular" data-icon="browser"
-            class="svg-inline--fa fa-browser fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 512 512">
-            <path
-              d="M448 32H64C28.654 32 0 60.652 0 96V416C0 451.348 28.654 480 64 480H448C483.346 480 512 451.348 512 416V96C512 60.652 483.346 32 448 32ZM464 416C464 424.824 456.822 432 448 432H64C55.178 432 48 424.824 48 416V160H464V416Z"
-              fill="currentColor" />
-          </svg>
-
-          <div class="service-content">
-            <h3>Desarrollo web</h3>
-
-            <p class="desc">
-              En la actualidad, un negocio sin página web, es un negocio inexistente en el mundo digital.
-            </p>
-            <p class="desc">
-              Para prevenir esto, le ayudamos a transcribir sus deseos y necesidades a una página web, con diseño
-              moderno y minimalista, siendo nuestra prioridad, el cumplimiento de sus requerimientos.
-            </p>
-            <a href="#contact" class="button stroke full-width smoothscroll" id="contratar-service1">Contratar</a>
-          </div>
+      <div class="row resume-timeline">
+        <div class="col-twelve resume-header">
+          <h2 id="education-heading">Educación</h2>
         </div>
-        <!-- /service -->
 
-        <div class="service">
-          <svg aria-hidden="true" focusable="false" data-prefix="fa-regular" data-icon="window"
-            class="svg-inline--fa fa-window fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 512 512">
-            <path
-              d="M448 32H64C28.654 32 0 60.652 0 96V416C0 451.348 28.654 480 64 480H448C483.346 480 512 451.348 512 416V96C512 60.652 483.346 32 448 32ZM288 96C305.75 96 320 110.25 320 128S305.75 160 288 160S256 145.75 256 128S270.25 96 288 96ZM192 96C209.75 96 224 110.25 224 128S209.75 160 192 160S160 145.75 160 128S174.25 96 192 96ZM96 96C113.75 96 128 110.25 128 128S113.75 160 96 160S64 145.75 64 128S78.25 96 96 96ZM464 416C464 424.824 456.822 432 448 432H64C55.178 432 48 424.824 48 416V224H464V416Z"
-              fill="currentColor" />
-          </svg>
+        <div class="col-twelve">
+          <div class="timeline-wrap">
+            <div class="timeline-block">
+              <div class="timeline-ico">
+                <svg
+                  aria-hidden="true"
+                  focusable="false"
+                  data-prefix="fa-solid"
+                  data-icon="graduation-cap"
+                  class="svg-inline--fa fa-graduation-cap fa-w-20"
+                  role="img"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 640 512"
+                  style="height: 2rem; position: relative; top: 2px"
+                >
+                  <path
+                    d="M623.953 136.914L341.215 35.684C327.482 30.773 312.518 30.773 298.785 35.684L16.047 136.914C6.438 140.352 0 149.617 0 160S6.438 179.648 16.047 183.086L76.008 204.555C64.121 220.359 55.811 238.734 51.518 258.531C40.047 263.395 32 274.758 32 288C32 297.953 36.814 306.488 43.939 312.359L19.105 461.367C17.48 471.121 25 480 34.887 480H93.113C103 480 110.52 471.121 108.895 461.367L84.061 312.359C91.186 306.488 96 297.953 96 288C96 277.707 90.826 268.969 83.277 263.113C87.529 245.352 96.154 229.289 108.213 216.086L298.785 284.316C312.518 289.227 327.482 289.227 341.215 284.316L623.953 183.086C633.562 179.648 640 170.383 640 160S633.562 140.352 623.953 136.914ZM351.988 314.449C341.688 318.133 330.926 320 320 320C309.076 320 298.312 318.133 287.998 314.445L142.781 262.453L128 405.328C128 446.602 213.999 480 320 480C425.999 480 512 446.602 512 405.328L497.219 262.453L351.988 314.449Z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </div>
 
-          <div class="service-content">
-            <h3>Aplicaciones web</h3>
+              <div class="timeline-header">
+                <h4 id="education-el1-heading">Ingeniero Informático</h4>
+                <p>2018 - 2023</p>
+              </div>
 
-            <p class="desc">
-              Cada negocio requiere sistemas a la medida, para facilitar su trabajo, ya sean sistemas de inventario,
-              facturación, pedidos y entregas, entre otros.
-            </p>
-            <p class="desc">
-              Aquí en DNMjustMe, brindamos la solución a esos problemas, con el desarrollo de sistemas web a la medida,
-              cumpliendo con sus requerimientos y necesidades.
-            </p>
-            <a href="#contact" class="button stroke full-width smoothscroll" id="contratar-service2">Contratar</a>
-          </div>
-        </div>
-        <!-- /service -->
-
-        <div class="service">
-          <svg aria-hidden="true" focusable="false" data-prefix="fa-light" data-icon="code"
-            class="svg-inline--fa fa-code fa-w-20" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
-            <path
-              d="M171.953 117.378C166.078 110.753 155.953 110.222 149.375 116.034L5.375 244.033C1.953 247.064 0 251.439 0 256.002C0 260.564 1.953 264.939 5.375 267.97L149.375 395.97C152.422 398.657 156.219 400.001 160 400.001C164.406 400.001 168.797 398.188 171.953 394.626C177.828 388.032 177.234 377.907 170.625 372.032L40.078 256.002L170.625 139.971C177.234 134.096 177.828 123.971 171.953 117.378ZM634.625 244.033L490.625 116.034C484 110.222 473.891 110.753 468.047 117.378C462.172 123.971 462.766 134.096 469.375 139.971L599.922 256.002L469.375 372.032C462.766 377.907 462.172 388.032 468.047 394.626C471.203 398.188 475.594 400.001 480 400.001C483.781 400.001 487.578 398.657 490.625 395.97L634.625 267.97C638.047 264.939 640 260.564 640 256.002C640 251.439 638.047 247.064 634.625 244.033ZM405.062 0.816C396.625 -1.965 387.625 2.597 384.828 10.941L224.828 490.938C222.031 499.313 226.562 508.375 234.938 511.187C236.625 511.75 238.328 512 240 512C246.703 512 252.938 507.75 255.172 501.063L415.172 21.066C417.969 12.691 413.438 3.628 405.062 0.816Z"
-              fill="currentColor" />
-          </svg>
-
-          <div class="service-content">
-            <h3>Soluciones informáticas</h3>
-
-            <p class="desc">
-              Si batallas con la solución de algún problema, y necesitas de un enfoque fresco, no dude en contactarnos.
-              Ofrecemos suluciones a problemas en los lenguajes mencionados en la sección "Sobre mi".
-            </p>
-            <p class="desc">
-              Brindamos tarifas accesibles, dependiendo de la complejidad del algoritmo solicitado.
-            </p>
-            <a href="#contact" class="button stroke full-width smoothscroll" id="contratar-service3">Contratar</a>
-          </div>
-        </div>
-        <!-- /service -->
-
-        <div class="service">
-          <svg aria-hidden="true" focusable="false" data-prefix="fa-light" data-icon="user-headset"
-            class="svg-inline--fa fa-user-headset fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 448 512">
-            <path
-              d="M223.682 96H224.32C262.068 96 296.293 118.098 311.75 152.625C327.125 187.25 320.625 227.75 295.25 255.75C295.25 255.875 295.375 255.875 295.375 256H304C320.5 256 335.875 247.375 344.5 233.375C349 220.375 352 206.625 352 192C352 121.25 294.75 64 224 64S96 121.25 96 192C96 232.375 115.125 268 144.375 291.5C144.25 290.25 144 289.25 144 288C144.125 276.75 147.125 265.625 152.875 256C127.375 228 120.75 187.5 136.125 152.75C151.582 118.223 185.809 96 223.682 96ZM48 224C56.875 224 64 216.875 64 208V192C64 103.75 135.75 32 224 32S384 103.75 384 192V208C384 252.125 348.125 288 304 288H272C272 270.375 257.625 256 240 256H208C190.375 256 176 270.375 176 288S190.375 320 208 320H304C365.875 319.875 415.875 269.875 416 208V192C416 86.125 329.875 0 224 0S32 86.125 32 192V208C32 216.875 39.125 224 48 224ZM314.664 352H133.336C59.699 352 0 411.695 0 485.332C0 500.059 11.941 512 26.664 512H421.336C436.059 512 448 500.059 448 485.332C448 411.695 388.307 352 314.664 352ZM32.139 480C34.918 426.592 79.246 384 133.336 384H314.664C368.754 384 413.082 426.592 415.861 480H32.139Z"
-              fill="currentColor" />
-          </svg>
-
-          <div class="service-content">
-            <h3>Soporte técnico</h3>
-
-            <p class="desc">
-              Las nuevas tecnologías pueden ser un poco difíciles de comprender. Si usted es uno de esos que tiene esas
-              dificultades, no dude en contactarnos. Ofrecemos Soporte técnico referente a nuestros servicios y otras
-              tecnologías.
-            </p>
-            <a href="#contact" class="button stroke full-width smoothscroll" id="contratar-service4">Contratar</a>
-          </div>
-        </div>
-        <!-- /service -->
-
-        <div class="service">
-          <svg aria-hidden="true" focusable="false" data-prefix="fa-light" data-icon="user-gear"
-            class="svg-inline--fa fa-user-gear fa-w-20" role="img" xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 640 512">
-            <path
-              d="M627.141 358.781L610.469 349.156C610.969 344.688 611.203 340.375 611.203 336.188C611.203 331.813 610.953 327.406 610.453 322.875L627.172 313.219C637.639 307.125 642.498 294.5 638.733 283.188C631.545 261.531 620.25 241.938 605.141 224.875C597.375 216.156 583.377 214.063 573.361 219.938L556.08 229.906C549.08 224.875 541.658 220.594 533.848 217.063V197.188C533.848 185.188 525.426 174.656 513.723 172.156C491.225 167.406 468.865 167.406 446.211 172.156C434.586 174.656 426.149 185.188 426.149 197.188V217.063C418.352 220.594 410.914 224.875 403.932 229.906L386.713 219.969C376.526 214.031 362.541 216.219 354.824 224.938C339.762 241.938 328.465 261.531 321.293 283.156C317.512 294.5 322.371 307.125 332.871 313.219L349.559 322.875C349.059 327.406 348.809 331.812 348.809 336.187C348.809 340.375 349.043 344.687 349.543 349.156L332.918 358.75C322.371 364.781 317.481 377.437 321.277 388.812C328.481 410.469 339.762 430.062 354.746 446.937C362.432 455.781 376.572 457.875 386.651 452.094L403.635 442.281C410.68 447.375 418.211 451.719 426.149 455.312V474.812C426.149 486.812 434.586 497.344 446.289 499.844C457.537 502.219 468.881 503.406 480.006 503.406S502.473 502.219 513.801 499.844C525.426 497.344 533.848 486.812 533.848 474.812V455.312C541.783 451.719 549.315 447.375 556.361 442.281L573.299 452.031C583.502 457.969 597.531 455.75 605.172 447.062C620.25 430.062 631.529 410.469 638.717 388.844C642.514 377.469 637.654 364.812 627.141 358.781ZM577.299 317.469C578.455 323.531 579.205 329.781 579.205 336.187C579.205 342.5 578.44 348.625 577.315 354.625L575.236 365.75L606.563 383.844C601.375 397.625 594.063 410.312 584.752 421.687L553.111 403.469L544.502 410.906C535.082 419.031 524.332 425.281 512.551 429.406L501.848 433.156V469.531C487.178 472.031 472.756 472.031 458.147 469.531V433.156L447.445 429.406C435.649 425.25 424.914 419.031 415.508 410.906L406.914 403.438L375.26 421.688C365.963 410.344 358.652 397.656 353.449 383.844L384.776 365.75L382.697 354.625C381.572 348.625 380.807 342.5 380.807 336.188C380.807 329.781 381.557 323.531 382.713 317.469L384.838 306.313L353.449 288.156C358.637 274.375 365.947 261.688 375.244 250.281L407.102 268.688L415.711 261.312C425.149 253.188 435.82 247.031 447.43 242.969L458.147 239.219V202.469C472.85 199.969 487.24 199.969 501.848 202.469V239.25L512.582 242.969C524.176 247.031 534.863 253.187 544.299 261.312L552.908 268.688L584.768 250.281C594.063 261.688 601.36 274.375 606.563 288.156L575.174 306.313L577.299 317.469ZM480.006 280C449.133 280 424.008 305.125 424.008 336S449.133 392 480.006 392S536.004 366.875 536.004 336S510.879 280 480.006 280ZM480.006 360C466.772 360 456.006 349.219 456.006 336S466.772 312 480.006 312S504.004 322.781 504.004 336S493.24 360 480.006 360ZM368 480H34.664C33.213 480 32 478.793 32 477.342C31.994 399.404 95.399 336 173.336 336H272C280.836 336 288 328.836 288 320C288 311.162 280.836 304 272 304H173.336C77.539 304 -0.115 381.715 0 477.543C0.024 496.574 15.633 512 34.664 512H368C376.836 512 384 504.836 384 496C384 487.162 376.836 480 368 480ZM224 256C294.695 256 352 198.691 352 128S294.695 0 224 0C153.313 0 96 57.309 96 128S153.313 256 224 256ZM224 32C276.936 32 320 75.064 320 128C320 180.934 276.936 224 224 224S128 180.934 128 128C128 75.064 171.065 32 224 32Z"
-              fill="currentColor" />
-          </svg>
-
-          <div class="service-content">
-            <h3>Mantenimiento</h3>
-
-            <p class="desc">
-              Mantener nuestras herramientas actualizadas, y funcionando eficientemente puede ser un poco complicado.
-              Aquí en DNMjustMe mantenemos nuestras páginas y aplicaciones webs siempre actualizadas y eficientemente en
-              funcionamiento.
-            </p>
-            <a href="#contact" class="button stroke full-width smoothscroll" id="contratar-service5">Contratar</a>
-          </div>
-        </div>
-        <!-- /service -->
-
-
-      </div>
-    </div>
-
-
-    <div class="row section-intro" style="min-width: 90vw; text-align: justify;">
-      <div class="col-twelve">
-        <p class="lead">
-          El flujo de trabajo en cada servicio es el siguiente:
-        </p>
-        <ol>
-          <li>Primer encuentro
-            <ul class="disc">
-              <li>Presentación de ambas partes.</li>
-              <li>Aproximación al tema.</li>
-            </ul>
-          </li>
-          <li>Primera reunión formal
-            <ul class="disc">
-              <li>Presentación de los requisitos obtenidos por nuestra parte, a partir del primer encuentro.</li>
-              <li>Discusión enrtre ambas partes sobre los requisitos.</li>
-              <li>Agregar, eliminar o editar requisitos de ser necesario.</li>
-              <li>Aprobación de los requisitos por parte del cliente.</li>
-              <li>Discusión del presupuesto del proyecto.</li>
-            </ul>
-          </li>
-          <li>Segunda reunión formal
-            <ul class="disc">
-              <li>Presentación del plan de entregas.</li>
-              <li>Ajustes finales del plan de entregas y el presupuesto.</li>
-            </ul>
-          </li>
-          <li>Desarrollo del proyecto
-            <ul class="disc">
-              <li>Al finalizar cada una de las etapas del plan de entregas se tendrá otro encuentro para mostrar los
-                avances del proyecto y coordinar el pago definido para esta etapa.</li>
-            </ul>
-          </li>
-          <li>Entrega del proyecto
-            <ul class="disc">
-              <li>Cada proyecto se entregará con un manual de usuario de ser requerido.</li>
-            </ul>
-          </li>
-          <li>Soporte técnico
-            <ul class=disc>
-              <li>Será asesorado en cada momento de la puesta en marcha de su proyecto en un dominio y hosting adquirido
-                por su cuenta.</li>
-              <li>El período de soporte se extenderá a 5 meses después de la entrega oficial del proyecto, para extender
-                el período se deberá contratar nuevamente.</li>
-            </ul>
-          </li>
-          <li>Mantenimiento
-            <ul class="disc">
-              <li>El período de mantenimiento se extenderá a 5 meses después de la entrega oficial del proyecto, para
-                extender el período se deberá contratar nuevamente. </li>
-            </ul>
-          </li>
-        </ol>
-      </div>
-    </div>
-  </section>
-  <!-- /services -->
-
-  <!-- contact
-   ================================================== -->
-  <section id="contact">
-    <div class="row section-intro">
-      <div class="col-twelve">
-        <h5>Contacto</h5>
-        <h1>Me encantaría saber de usted.</h1>
-
-        <p class="lead">
-          Plantee su problema y será atendido vía correo electrónico.
-        </p>
-      </div>
-    </div>
-    <!-- /section-intro -->
-
-    <div class="row contact-form">
-      <div class="col-twelve">
-        <!-- form -->
-        <form name="contactForm" id="contactForm" method="post" action="" style="display: block !important;">
-          <fieldset>
-            <div class="form-field">
-              <input name="contactName" type="text" id="contactName" placeholder="Nombre" value="" minlength="2"
-                required="" />
-            </div>
-            <div class="form-field">
-              <input name="contactEmail" type="email" id="contactEmail" placeholder="Correo" value="" required="" />
-            </div>
-            <div class="form-field">
-              <input name="contactSubject" type="text" id="contactSubject" placeholder="Asunto" value="" />
-            </div>
-            <div class="form-field">
-              <textarea name="contactMessage" id="contactMessage" placeholder="Mensaje" rows="10" cols="50" required=""
-                minlength="15"></textarea>
-            </div>
-            <div class="form-field">
-              <button class="submitform">Enviar</button>
-              <div id="submit-loader">
-                <div class="text-loader">Enviando...</div>
-                <div class="s-loader">
-                  <div class="bounce1"></div>
-                  <div class="bounce2"></div>
-                  <div class="bounce3"></div>
-                </div>
+              <div class="timeline-content">
+                <h4 id="education-el1-subHeading">
+                  Universidad de Matanzas Camilo Cienfuegos, Matanzas, Cuba
+                </h4>
+                <p id="education-el1-p">
+                  Obtuve las bases de mis conocimientos. Desarrollé mis
+                  habilidades de lógica de programación, programación orientada
+                  a objetos, estructura de datos, arquitectura de computadoras,
+                  patrones de diseño, metodologías de desarrollo, entre otros.
+                  Obtuve las nociones en lenguajes como C#, Python, Ensamblador
+                  8086.
+                </p>
               </div>
             </div>
-          </fieldset>
-        </form>
-        <!-- Form End -->
+            <div class="timeline-block">
+              <div class="timeline-ico">
+                <svg
+                  aria-hidden="true"
+                  focusable="false"
+                  data-prefix="fa-solid"
+                  data-icon="graduation-cap"
+                  class="svg-inline--fa fa-graduation-cap fa-w-20"
+                  role="img"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 640 512"
+                  style="height: 2rem; position: relative; top: 2px"
+                >
+                  <path
+                    d="M623.953 136.914L341.215 35.684C327.482 30.773 312.518 30.773 298.785 35.684L16.047 136.914C6.438 140.352 0 149.617 0 160S6.438 179.648 16.047 183.086L76.008 204.555C64.121 220.359 55.811 238.734 51.518 258.531C40.047 263.395 32 274.758 32 288C32 297.953 36.814 306.488 43.939 312.359L19.105 461.367C17.48 471.121 25 480 34.887 480H93.113C103 480 110.52 471.121 108.895 461.367L84.061 312.359C91.186 306.488 96 297.953 96 288C96 277.707 90.826 268.969 83.277 263.113C87.529 245.352 96.154 229.289 108.213 216.086L298.785 284.316C312.518 289.227 327.482 289.227 341.215 284.316L623.953 183.086C633.562 179.648 640 170.383 640 160S633.562 140.352 623.953 136.914ZM351.988 314.449C341.688 318.133 330.926 320 320 320C309.076 320 298.312 318.133 287.998 314.445L142.781 262.453L128 405.328C128 446.602 213.999 480 320 480C425.999 480 512 446.602 512 405.328L497.219 262.453L351.988 314.449Z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </div>
 
-        <!-- contact-warning -->
-        <div id="message-warning"></div>
-        <!-- contact-success -->
-        <div id="message-success">
-          Su mensaje ha sido enviado, muchas gracias.<br />
+              <div class="timeline-header">
+                <h4 id="education-el2-heading">Nivel de inglés B2</h4>
+                <p>2018 - 2019</p>
+              </div>
+
+              <div class="timeline-content">
+                <h4 id="education-el2-subHeading">
+                  Escuela de idiomas de la Universidad de Matanzas Camilo
+                  Cienfuegos
+                </h4>
+                <p id="education-el2-p">
+                  Desarrollé mis habilidades en el idioma inglés, obteniendo el
+                  certificado de nivel B2.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      <!-- /col-twelve -->
-    </div>
-    <!-- /contact-form -->
 
-    <div class="row contact-info">
-      <div class="col-four tab-full">
-        <svg aria-hidden="true" focusable="false" data-prefix="fa-regular" data-icon="location-smile"
-          class="svg-inline--fa fa-location-smile fa-w-12" role="img" xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 384 512" style="height: 4rem; color: var(--color_verde)">
-          <path
-            d="M192 0C86.375 0 0 86.375 0 192C0 268.75 25.625 291.25 172.75 502.375C177.625 508.75 184.75 512 192 512S206.375 508.75 211.25 502.375C358.375 291.25 384 268.75 384 192C384 86.375 297.625 0 192 0ZM192 446.125C177.625 425.5 164.5 407 152.625 390.125C58.375 256.5 48 240.25 48 192C48 112.625 112.625 48 192 48S336 112.625 336 192C336 240.25 325.625 256.5 231.375 390.125C219.5 407 206.375 425.5 192 446.125ZM136 176C149.25 176 160 165.25 160 152S149.25 128 136 128C122.75 128 112 138.75 112 152S122.75 176 136 176ZM248 176C261.25 176 272 165.25 272 152S261.25 128 248 128S224 138.75 224 152S234.75 176 248 176ZM237.999 227.25C214.75 253.625 169.25 253.625 145.999 227.25C137.25 217.25 121.999 216.375 112.125 225.125C102.125 233.875 101.25 249 109.999 259C130.75 282.5 160.75 296 192 296C223.375 296 253.25 282.5 273.999 259C282.75 249 281.75 233.875 271.875 225.125C261.999 216.375 246.75 217.25 237.999 227.25Z"
-            fill="currentColor" />
-        </svg>
+      <div class="row resume-timeline">
+        <div class="col-twelve resume-header">
+          <h2 id="work-experience-heading">Experiencia de trabajo</h2>
+        </div>
+        <!-- /resume-header -->
 
-        <h5>Donde encontrarme</h5>
+        <div class="col-twelve">
+          <div class="timeline-wrap">
+            <div class="timeline-block">
+              <div class="timeline-ico">
+                <svg
+                  aria-hidden="true"
+                  focusable="false"
+                  data-prefix="fa-solid"
+                  data-icon="briefcase"
+                  class="svg-inline--fa fa-briefcase fa-w-16"
+                  role="img"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 512 512"
+                  style="height: 2rem; position: relative; top: 2px"
+                >
+                  <path
+                    d="M320 336C320 344.844 312.844 352 304 352H208C199.156 352 192 344.844 192 336V288H0V432C0 457.594 22.406 480 48 480H464C489.594 480 512 457.594 512 432V288H320V336ZM464 96H384V48C384 22.406 361.594 0 336 0H176C150.406 0 128 22.406 128 48V96H48C22.406 96 0 118.406 0 144V256H512V144C512 118.406 489.594 96 464 96ZM336 96H176V48H336V96Z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </div>
 
-        <p>
-          Pío Álvarez #148<br />
-          Máximo Gómez, Perico<br />
-          Matanzas, Cuba
-        </p>
+              <div class="timeline-header">
+                <h4 id="work-experience-el1-heading">Desarrollador web</h4>
+                <p id="work-experience-el1-timelapse">2020 - Presente</p>
+              </div>
+
+              <div class="timeline-content">
+                <h4 id="work-experience-el1-subHeading">
+                  Estación Experimental de Pastos y Forrajes Indio Hatuey,
+                  Matanzas, Cuba.
+                </h4>
+                <p id="work-experience-el1-p">
+                  En la estación puse en práctica los conocimientos obenidos
+                  durante toda la carrera y obtuve algunos nuevos. Gracias a
+                  esto pude desarrollar mi trabajo de diploma, que consiste en
+                  un sistema de gestión para su proceso de contratación,
+                  desarrollado en código nativo, utilizando HTML5, CSS3, JS,
+                  Bootsrap, jQuery para el Front y PHP, Maria DB para el Back.
+                </p>
+                <p id="work-experience-el1-p1">
+                  Además soy el diseñador y desarrollador del sitio de su
+                  biblioteca web. Desarrollado con tecnologías similares.
+                  <a
+                    id="work-experience-el1-a"
+                    href="http://biblioteca.ihatuey.cu/"
+                    target="_blank"
+                    >Visitar Biblioteca André Voisin
+                    <svg
+                      aria-hidden="true"
+                      focusable="false"
+                      data-prefix="fa-solid"
+                      data-icon="link"
+                      class="svg-inline--fa fa-link fa-w-20"
+                      role="img"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 640 512"
+                      style="height: 2rem; position: relative; top: 2px"
+                    >
+                      <path
+                        d="M598.594 41.406C570.991 13.803 534.809 0 498.629 0S426.27 13.803 398.665 41.406L355.309 84.762C370.42 92.773 384.78 102.342 397.219 114.781C400.366 117.928 403.118 121.299 405.961 124.619L443.92 86.66C458.534 72.047 477.963 64 498.629 64S538.727 72.047 553.34 86.662C567.954 101.275 576.002 120.705 576.002 141.371S567.954 181.467 553.34 196.08L420.081 329.338C405.467 343.951 386.038 352 365.372 352S325.276 343.951 310.663 329.336C296.047 314.723 288 295.293 288 274.627S296.047 234.531 310.663 219.918L314.168 216.412C312.075 212.473 309.95 208.518 306.704 205.266C298.141 196.719 286.75 192 274.625 192C262.692 192 251.528 196.664 243.014 204.969C212.299 258.926 219.381 328.566 265.407 374.592C293.012 402.197 329.192 416 365.372 416C401.553 416 437.733 402.197 465.336 374.592L598.594 241.336C627.045 212.885 640.834 175.325 639.962 138.044C639.142 102.981 625.353 68.165 598.594 41.406ZM234.042 387.381L196.083 425.34C181.469 439.953 162.04 448 141.374 448C120.706 448 101.274 439.953 86.661 425.338C72.047 410.725 63.999 391.295 63.999 370.629S72.047 330.533 86.661 315.92L219.922 182.662C234.536 168.049 253.965 160 274.631 160S314.727 168.049 329.34 182.664C343.956 197.277 352.002 216.707 352.002 237.373S343.956 277.469 329.34 292.082L325.834 295.588C327.928 299.527 330.053 303.482 333.299 306.734C341.862 315.281 353.252 320 365.377 320C377.311 320 388.475 315.336 396.989 307.031C427.704 253.074 420.622 183.434 374.596 137.408C346.991 109.803 310.811 96 274.631 96C238.45 96 202.27 109.803 174.667 137.408L41.407 270.664C13.802 298.268 0 334.449 0 370.629C0 406.809 13.802 442.989 41.407 470.594C69.01 498.197 105.192 512 141.374 512C177.553 512 213.733 498.197 241.338 470.594L284.694 427.238C269.583 419.227 255.223 409.658 242.784 397.219C239.637 394.072 236.885 390.701 234.042 387.381Z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </a>
+                </p>
+              </div>
+            </div>
+            <!-- /timeline-block -->
+
+            <div class="timeline-block">
+              <div class="timeline-ico">
+                <svg
+                  aria-hidden="true"
+                  focusable="false"
+                  data-prefix="fa-solid"
+                  data-icon="briefcase"
+                  class="svg-inline--fa fa-briefcase fa-w-16"
+                  role="img"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 512 512"
+                  style="height: 2rem; position: relative; top: 2px"
+                >
+                  <path
+                    d="M320 336C320 344.844 312.844 352 304 352H208C199.156 352 192 344.844 192 336V288H0V432C0 457.594 22.406 480 48 480H464C489.594 480 512 457.594 512 432V288H320V336ZM464 96H384V48C384 22.406 361.594 0 336 0H176C150.406 0 128 22.406 128 48V96H48C22.406 96 0 118.406 0 144V256H512V144C512 118.406 489.594 96 464 96ZM336 96H176V48H336V96Z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </div>
+
+              <div class="timeline-header">
+                <h4 id="work-experience-el2-heading">
+                  Especialista en Informática
+                </h4>
+                <p id="work-experience-el2-timelapse">Enero 2023 - Presente</p>
+              </div>
+
+              <div class="timeline-content">
+                <h4 id="work-experience-el2-subHeading">
+                  Dirección Municipal de Ordenamiento y Urbanismo, Perico,
+                  Matanzas, Cuba
+                </h4>
+                <p id="work-experience-el2-p">
+                  Dentro de las funciones que realizo se encuentran:
+                </p>
+                <ul class="disc">
+                  <li id="work-experience-el2-li1">
+                    Actualizaciones de aplicaciones, antivirus y software en
+                    general.
+                  </li>
+                  <li id="work-experience-el2-li2">
+                    Mantenimiento y actualización de hardware.
+                  </li>
+                  <li id="work-experience-el2-li3">
+                    Inventarios de recursos(hardware y software)
+                  </li>
+                  <li id="work-experience-el2-li4">
+                    Capacitaciones del personal sobre diversas aplicaciones.
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- /timeline-block -->
+          </div>
+          <!-- /timeline-wrap -->
+        </div>
+        <!-- /col-twelve -->
+      </div>
+      <!-- /resume-timeline -->
+      <div class="row button-section">
+        <div class="col-twelve">
+          <a
+            href="cv/DNMjustMe-ES.pdf"
+            title="CV Español"
+            class="button button-primary"
+            download="DNMjustMe-ES.pdf"
+            >CV Español
+            <svg
+              aria-hidden="true"
+              focusable="false"
+              data-prefix="fa-solid"
+              data-icon="down-to-line"
+              class="svg-inline--fa fa-down-to-line fa-w-12"
+              role="img"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 384 512"
+              style="height: 2rem; position: relative; top: 2px"
+            >
+              <path
+                d="M352 416H32C14.327 416 0 430.327 0 448V448C0 465.673 14.327 480 32 480H352C369.673 480 384 465.673 384 448V448C384 430.327 369.673 416 352 416ZM328 192.114H256V64.023C256 46.336 241.672 32 224 32H160C142.326 32 128 46.336 128 64.023V192.114H56C46.422 192.114 37.75 197.822 33.953 206.625C30.172 215.428 31.969 225.654 38.547 232.628L174.547 376.731C183.609 386.331 200.391 386.331 209.453 376.731L345.453 232.628C352.031 225.654 353.828 215.428 350.047 206.625C346.25 197.822 337.578 192.114 328 192.114Z"
+                fill="currentColor"
+              />
+            </svg>
+          </a>
+          <a
+            href="cv/DNMjustMe-EN.pdf"
+            title="CV Inglés"
+            class="button button-primary"
+            download="DNMjustMe-EN.pdf"
+            >CV Inglés
+            <svg
+              aria-hidden="true"
+              focusable="false"
+              data-prefix="fa-solid"
+              data-icon="down-to-line"
+              class="svg-inline--fa fa-down-to-line fa-w-12"
+              role="img"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 384 512"
+              style="height: 2rem; position: relative; top: 2px"
+            >
+              <path
+                d="M352 416H32C14.327 416 0 430.327 0 448V448C0 465.673 14.327 480 32 480H352C369.673 480 384 465.673 384 448V448C384 430.327 369.673 416 352 416ZM328 192.114H256V64.023C256 46.336 241.672 32 224 32H160C142.326 32 128 46.336 128 64.023V192.114H56C46.422 192.114 37.75 197.822 33.953 206.625C30.172 215.428 31.969 225.654 38.547 232.628L174.547 376.731C183.609 386.331 200.391 386.331 209.453 376.731L345.453 232.628C352.031 225.654 353.828 215.428 350.047 206.625C346.25 197.822 337.578 192.114 328 192.114Z"
+                fill="currentColor"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- /features -->
+
+    <!-- Portfolio Section
+   ================================================== -->
+    <section id="portfolio">
+      <div class="row section-intro">
+        <div class="col-twelve">
+          <h5 id="portfolio-heading">Portafolio</h5>
+          <h1 id="portfolio-subHeading">Revise algo de mi trabajo.</h1>
+
+          <p class="lead" id="portfolio-p">
+            Una muestra de lo que soy capaz de hacer. Recopilación de mis
+            trabajos más importantes. Proyectos tanto personales como trabajos
+            oficiales.
+          </p>
+        </div>
+      </div>
+      <!-- /section-intro-->
+
+      <div class="row portfolio-content">
+        <div class="col-twelve">
+          <!-- portfolio-wrapper -->
+          <div id="folio-wrapper" class="block-1-2 block-mob-full stack">
+            <div class="bgrid folio-item">
+              <div class="item-wrap text-center">
+                <img src="images/portfolio/justAlerts.png" alt="justAlerts" />
+                <a href="#modal-01" class="overlay">
+                  <div class="folio-item-table">
+                    <div class="folio-item-cell">
+                      <h3 class="folio-title">justAlerts</h3>
+                      <span id="portfolio-el3-type" class="folio-types">
+                        Librería de alertas JavaScript
+                      </span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <div class="bgrid folio-item">
+              <div class="item-wrap text-center">
+                <img src="images/portfolio/biblio.png" alt="justAlerts" />
+                <a href="#modal-02" class="overlay">
+                  <div class="folio-item-table">
+                    <div class="folio-item-cell">
+                      <h3 class="folio-title">Bibliotea André Voisin</h3>
+                      <span id="portfolio-el2-type" class="folio-types">
+                        Sitio web de la Biblioteca André Voisin
+                      </span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <div class="bgrid folio-item" style="margin-top: 1em">
+              <div class="item-wrap text-center">
+                <img src="images/portfolio/justSnake.png" alt="justSnake" />
+                <a href="#modal-03" class="overlay">
+                  <div class="folio-item-table">
+                    <div class="folio-item-cell">
+                      <h3 class="folio-title">justSnake</h3>
+                      <span class="folio-types" id="portfolio-el1-type">
+                        El clásico juego de Nokia adaptado a la web...
+                      </span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <!-- /folio-item -->
+
+            <!-- modal popups - begin
+	            ============================================================= -->
+            <div id="modal-01" class="popup-modal slider mfp-hide">
+              <div class="media text-center">
+                <img
+                  src="images/portfolio/modals/m-justAlerts.png"
+                  alt="justAlerts"
+                />
+              </div>
+
+              <div class="description-box">
+                <h4>justAlerts</h4>
+                <p id="portfolio-el1-p1">
+                  Una librería desarrollada con JavaScript para la generación de
+                  alertas y notificaciones atractivas para el usuario y fácil de
+                  usar por los desarrolladores.
+                </p>
+                <p id="portfolio-el1-p2">
+                  Proyecto personal destinado a practicar mis habilidades de
+                  desarrollo con JavaScript.
+                </p>
+                <p id="portfolio-el1-p3">
+                  Lenguajes y herramientas utilizadas: HTML5, CSS3, JS,
+                  Bootstrap, jQuery.
+                </p>
+
+                <div class="categories" id="portfolio-el1-category">Desarrollo web</div>
+              </div>
+
+              <div class="link-box">
+                <a
+                  href="https://dnmjustme.github.io/justAlerts/"
+                  target="_blank"
+                  >Visitar</a
+                >
+                <a id="portfolio-el1-close" href="#" class="popup-modal-dismiss">Cerrar</a>
+              </div>
+            </div>
+
+            <div id="modal-02" class="popup-modal slider mfp-hide">
+              <div class="media text-center">
+                <img
+                  src="images/portfolio/modals/m-biblio.png"
+                  alt="justAlerts"
+                />
+              </div>
+
+              <div class="description-box">
+                <h4>Bibliotea André Voisin</h4>
+                <p id="portfolio-el2-p1">
+                  Sitio web de la Biblioteca André Voisin, perteneciente a la
+                  Estación Experimental de Pastos y Forrajes Indio Hatuey.
+                  Biblioteca digital que permite la descarga y consulta de
+                  materiales relacionados con la agricultura, veterinaria,
+                  agropecuaria, entre otros temas afines.
+                </p>
+                <p id="portfolio-el2-p2">
+                  Proyecto profesional, desarrollado como práctica laboral
+                  durante la carrera. En este, practico mis habilidades de
+                  full-stack, ya que se debía desarrollar una sección de
+                  administrador, que permitiera subir nuevos documentos, entre
+                  otras funcionalidades.
+                </p>
+                <p id="portfolio-el2-p3">
+                  Lenguajes y herramientas utilizadas: HTML5, CSS3, JS,
+                  Bootstrap, jQuery, PHP, MySQL.
+                </p>
+
+                <div id="portfolio-el2-category" class="categories">Desarrollo web</div>
+              </div>
+
+              <div class="link-box">
+                <a href="https://biblioteca.ihatuey.cu/" target="_blank"
+                  >Visitar</a
+                >
+                <a id="portfolio-el2-close" href="#" class="popup-modal-dismiss">Cerrar</a>
+              </div>
+            </div>
+
+            <div id="modal-03" class="popup-modal slider mfp-hide">
+              <div class="media text-center">
+                <img
+                  src="images/portfolio/modals/m-justSnake.png"
+                  alt="justAlerts"
+                />
+              </div>
+
+              <div class="description-box">
+                <h4>justSnake</h4>
+                <p>
+                  El clásico juego de Nokia adaptado a la web, amigable tanto
+                  con computadoras como téfonos celulares y otros dispositivos
+                  móviles.
+                </p>
+                <p>
+                  Proyecto personal, desarrollado con el objetivo de mejorar mis
+                  habilidades de manejo del DOM con JavaScript.
+                </p>
+                <p>
+                  Lenguajes y herramientas utilizadas: HTML5, CSS3, JS, jQuery,
+                  PHP.
+                </p>
+
+                <div class="categories">Desarrollo web</div>
+              </div>
+
+              <div class="link-box">
+                <a href="https://dnmjustme.github.io/justSnake/" target="_blank"
+                  >Visitar</a
+                >
+                <a href="#" class="popup-modal-dismiss">Cerrar</a>
+              </div>
+            </div>
+
+            <!-- modal popups - end
+	            ============================================================= -->
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /portfolio -->
+
+    <!-- services Section
+   ================================================== -->
+    <section id="services">
+      <div class="overlay"></div>
+
+      <div class="row section-intro">
+        <div class="col-twelve">
+          <h5>Servicios</h5>
+          <h1>¿Qué puedo hacer por usted?</h1>
+
+          <p class="lead">
+            Cada servicio incluye asistencia técnica en cada etapa. La
+            comunicación entre las dos partes es primordial para la fluidez del
+            proceso. Se utiliza una metodología ágil de desarrollo (XP), por lo
+            que el cliente juega un papel protagónico.
+          </p>
+        </div>
+      </div>
+      <!-- /section-intro -->
+
+      <div class="row services-content">
+        <div id="owl-slider" class="owl-carousel services-list">
+          <div class="service">
+            <svg
+              aria-hidden="true"
+              focusable="false"
+              data-prefix="fa-regular"
+              data-icon="browser"
+              class="svg-inline--fa fa-browser fa-w-16"
+              role="img"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 512 512"
+            >
+              <path
+                d="M448 32H64C28.654 32 0 60.652 0 96V416C0 451.348 28.654 480 64 480H448C483.346 480 512 451.348 512 416V96C512 60.652 483.346 32 448 32ZM464 416C464 424.824 456.822 432 448 432H64C55.178 432 48 424.824 48 416V160H464V416Z"
+                fill="currentColor"
+              />
+            </svg>
+
+            <div class="service-content">
+              <h3>Desarrollo web</h3>
+
+              <p class="desc">
+                En la actualidad, un negocio sin página web, es un negocio
+                inexistente en el mundo digital.
+              </p>
+              <p class="desc">
+                Para prevenir esto, le ayudamos a transcribir sus deseos y
+                necesidades a una página web, con diseño moderno y minimalista,
+                siendo nuestra prioridad, el cumplimiento de sus requerimientos.
+              </p>
+              <a
+                href="#contact"
+                class="button stroke full-width smoothscroll"
+                id="contratar-service1"
+                >Contratar</a
+              >
+            </div>
+          </div>
+          <!-- /service -->
+
+          <div class="service">
+            <svg
+              aria-hidden="true"
+              focusable="false"
+              data-prefix="fa-regular"
+              data-icon="window"
+              class="svg-inline--fa fa-window fa-w-16"
+              role="img"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 512 512"
+            >
+              <path
+                d="M448 32H64C28.654 32 0 60.652 0 96V416C0 451.348 28.654 480 64 480H448C483.346 480 512 451.348 512 416V96C512 60.652 483.346 32 448 32ZM288 96C305.75 96 320 110.25 320 128S305.75 160 288 160S256 145.75 256 128S270.25 96 288 96ZM192 96C209.75 96 224 110.25 224 128S209.75 160 192 160S160 145.75 160 128S174.25 96 192 96ZM96 96C113.75 96 128 110.25 128 128S113.75 160 96 160S64 145.75 64 128S78.25 96 96 96ZM464 416C464 424.824 456.822 432 448 432H64C55.178 432 48 424.824 48 416V224H464V416Z"
+                fill="currentColor"
+              />
+            </svg>
+
+            <div class="service-content">
+              <h3>Aplicaciones web</h3>
+
+              <p class="desc">
+                Cada negocio requiere sistemas a la medida, para facilitar su
+                trabajo, ya sean sistemas de inventario, facturación, pedidos y
+                entregas, entre otros.
+              </p>
+              <p class="desc">
+                Aquí en DNMjustMe, brindamos la solución a esos problemas, con
+                el desarrollo de sistemas web a la medida, cumpliendo con sus
+                requerimientos y necesidades.
+              </p>
+              <a
+                href="#contact"
+                class="button stroke full-width smoothscroll"
+                id="contratar-service2"
+                >Contratar</a
+              >
+            </div>
+          </div>
+          <!-- /service -->
+
+          <div class="service">
+            <svg
+              aria-hidden="true"
+              focusable="false"
+              data-prefix="fa-light"
+              data-icon="code"
+              class="svg-inline--fa fa-code fa-w-20"
+              role="img"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 640 512"
+            >
+              <path
+                d="M171.953 117.378C166.078 110.753 155.953 110.222 149.375 116.034L5.375 244.033C1.953 247.064 0 251.439 0 256.002C0 260.564 1.953 264.939 5.375 267.97L149.375 395.97C152.422 398.657 156.219 400.001 160 400.001C164.406 400.001 168.797 398.188 171.953 394.626C177.828 388.032 177.234 377.907 170.625 372.032L40.078 256.002L170.625 139.971C177.234 134.096 177.828 123.971 171.953 117.378ZM634.625 244.033L490.625 116.034C484 110.222 473.891 110.753 468.047 117.378C462.172 123.971 462.766 134.096 469.375 139.971L599.922 256.002L469.375 372.032C462.766 377.907 462.172 388.032 468.047 394.626C471.203 398.188 475.594 400.001 480 400.001C483.781 400.001 487.578 398.657 490.625 395.97L634.625 267.97C638.047 264.939 640 260.564 640 256.002C640 251.439 638.047 247.064 634.625 244.033ZM405.062 0.816C396.625 -1.965 387.625 2.597 384.828 10.941L224.828 490.938C222.031 499.313 226.562 508.375 234.938 511.187C236.625 511.75 238.328 512 240 512C246.703 512 252.938 507.75 255.172 501.063L415.172 21.066C417.969 12.691 413.438 3.628 405.062 0.816Z"
+                fill="currentColor"
+              />
+            </svg>
+
+            <div class="service-content">
+              <h3>Soluciones informáticas</h3>
+
+              <p class="desc">
+                Si batallas con la solución de algún problema, y necesitas de un
+                enfoque fresco, no dude en contactarnos. Ofrecemos suluciones a
+                problemas en los lenguajes mencionados en la sección "Sobre mi".
+              </p>
+              <p class="desc">
+                Brindamos tarifas accesibles, dependiendo de la complejidad del
+                algoritmo solicitado.
+              </p>
+              <a
+                href="#contact"
+                class="button stroke full-width smoothscroll"
+                id="contratar-service3"
+                >Contratar</a
+              >
+            </div>
+          </div>
+          <!-- /service -->
+
+          <div class="service">
+            <svg
+              aria-hidden="true"
+              focusable="false"
+              data-prefix="fa-light"
+              data-icon="user-headset"
+              class="svg-inline--fa fa-user-headset fa-w-14"
+              role="img"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 448 512"
+            >
+              <path
+                d="M223.682 96H224.32C262.068 96 296.293 118.098 311.75 152.625C327.125 187.25 320.625 227.75 295.25 255.75C295.25 255.875 295.375 255.875 295.375 256H304C320.5 256 335.875 247.375 344.5 233.375C349 220.375 352 206.625 352 192C352 121.25 294.75 64 224 64S96 121.25 96 192C96 232.375 115.125 268 144.375 291.5C144.25 290.25 144 289.25 144 288C144.125 276.75 147.125 265.625 152.875 256C127.375 228 120.75 187.5 136.125 152.75C151.582 118.223 185.809 96 223.682 96ZM48 224C56.875 224 64 216.875 64 208V192C64 103.75 135.75 32 224 32S384 103.75 384 192V208C384 252.125 348.125 288 304 288H272C272 270.375 257.625 256 240 256H208C190.375 256 176 270.375 176 288S190.375 320 208 320H304C365.875 319.875 415.875 269.875 416 208V192C416 86.125 329.875 0 224 0S32 86.125 32 192V208C32 216.875 39.125 224 48 224ZM314.664 352H133.336C59.699 352 0 411.695 0 485.332C0 500.059 11.941 512 26.664 512H421.336C436.059 512 448 500.059 448 485.332C448 411.695 388.307 352 314.664 352ZM32.139 480C34.918 426.592 79.246 384 133.336 384H314.664C368.754 384 413.082 426.592 415.861 480H32.139Z"
+                fill="currentColor"
+              />
+            </svg>
+
+            <div class="service-content">
+              <h3>Soporte técnico</h3>
+
+              <p class="desc">
+                Las nuevas tecnologías pueden ser un poco difíciles de
+                comprender. Si usted es uno de esos que tiene esas dificultades,
+                no dude en contactarnos. Ofrecemos Soporte técnico referente a
+                nuestros servicios y otras tecnologías.
+              </p>
+              <a
+                href="#contact"
+                class="button stroke full-width smoothscroll"
+                id="contratar-service4"
+                >Contratar</a
+              >
+            </div>
+          </div>
+          <!-- /service -->
+
+          <div class="service">
+            <svg
+              aria-hidden="true"
+              focusable="false"
+              data-prefix="fa-light"
+              data-icon="user-gear"
+              class="svg-inline--fa fa-user-gear fa-w-20"
+              role="img"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 640 512"
+            >
+              <path
+                d="M627.141 358.781L610.469 349.156C610.969 344.688 611.203 340.375 611.203 336.188C611.203 331.813 610.953 327.406 610.453 322.875L627.172 313.219C637.639 307.125 642.498 294.5 638.733 283.188C631.545 261.531 620.25 241.938 605.141 224.875C597.375 216.156 583.377 214.063 573.361 219.938L556.08 229.906C549.08 224.875 541.658 220.594 533.848 217.063V197.188C533.848 185.188 525.426 174.656 513.723 172.156C491.225 167.406 468.865 167.406 446.211 172.156C434.586 174.656 426.149 185.188 426.149 197.188V217.063C418.352 220.594 410.914 224.875 403.932 229.906L386.713 219.969C376.526 214.031 362.541 216.219 354.824 224.938C339.762 241.938 328.465 261.531 321.293 283.156C317.512 294.5 322.371 307.125 332.871 313.219L349.559 322.875C349.059 327.406 348.809 331.812 348.809 336.187C348.809 340.375 349.043 344.687 349.543 349.156L332.918 358.75C322.371 364.781 317.481 377.437 321.277 388.812C328.481 410.469 339.762 430.062 354.746 446.937C362.432 455.781 376.572 457.875 386.651 452.094L403.635 442.281C410.68 447.375 418.211 451.719 426.149 455.312V474.812C426.149 486.812 434.586 497.344 446.289 499.844C457.537 502.219 468.881 503.406 480.006 503.406S502.473 502.219 513.801 499.844C525.426 497.344 533.848 486.812 533.848 474.812V455.312C541.783 451.719 549.315 447.375 556.361 442.281L573.299 452.031C583.502 457.969 597.531 455.75 605.172 447.062C620.25 430.062 631.529 410.469 638.717 388.844C642.514 377.469 637.654 364.812 627.141 358.781ZM577.299 317.469C578.455 323.531 579.205 329.781 579.205 336.187C579.205 342.5 578.44 348.625 577.315 354.625L575.236 365.75L606.563 383.844C601.375 397.625 594.063 410.312 584.752 421.687L553.111 403.469L544.502 410.906C535.082 419.031 524.332 425.281 512.551 429.406L501.848 433.156V469.531C487.178 472.031 472.756 472.031 458.147 469.531V433.156L447.445 429.406C435.649 425.25 424.914 419.031 415.508 410.906L406.914 403.438L375.26 421.688C365.963 410.344 358.652 397.656 353.449 383.844L384.776 365.75L382.697 354.625C381.572 348.625 380.807 342.5 380.807 336.188C380.807 329.781 381.557 323.531 382.713 317.469L384.838 306.313L353.449 288.156C358.637 274.375 365.947 261.688 375.244 250.281L407.102 268.688L415.711 261.312C425.149 253.188 435.82 247.031 447.43 242.969L458.147 239.219V202.469C472.85 199.969 487.24 199.969 501.848 202.469V239.25L512.582 242.969C524.176 247.031 534.863 253.187 544.299 261.312L552.908 268.688L584.768 250.281C594.063 261.688 601.36 274.375 606.563 288.156L575.174 306.313L577.299 317.469ZM480.006 280C449.133 280 424.008 305.125 424.008 336S449.133 392 480.006 392S536.004 366.875 536.004 336S510.879 280 480.006 280ZM480.006 360C466.772 360 456.006 349.219 456.006 336S466.772 312 480.006 312S504.004 322.781 504.004 336S493.24 360 480.006 360ZM368 480H34.664C33.213 480 32 478.793 32 477.342C31.994 399.404 95.399 336 173.336 336H272C280.836 336 288 328.836 288 320C288 311.162 280.836 304 272 304H173.336C77.539 304 -0.115 381.715 0 477.543C0.024 496.574 15.633 512 34.664 512H368C376.836 512 384 504.836 384 496C384 487.162 376.836 480 368 480ZM224 256C294.695 256 352 198.691 352 128S294.695 0 224 0C153.313 0 96 57.309 96 128S153.313 256 224 256ZM224 32C276.936 32 320 75.064 320 128C320 180.934 276.936 224 224 224S128 180.934 128 128C128 75.064 171.065 32 224 32Z"
+                fill="currentColor"
+              />
+            </svg>
+
+            <div class="service-content">
+              <h3>Mantenimiento</h3>
+
+              <p class="desc">
+                Mantener nuestras herramientas actualizadas, y funcionando
+                eficientemente puede ser un poco complicado. Aquí en DNMjustMe
+                mantenemos nuestras páginas y aplicaciones webs siempre
+                actualizadas y eficientemente en funcionamiento.
+              </p>
+              <a
+                href="#contact"
+                class="button stroke full-width smoothscroll"
+                id="contratar-service5"
+                >Contratar</a
+              >
+            </div>
+          </div>
+          <!-- /service -->
+        </div>
       </div>
 
-      <div class="col-four tab-full collapse">
-        <svg aria-hidden="true" focusable="false" data-prefix="fa-regular" data-icon="envelope"
-          class="svg-inline--fa fa-envelope fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
-          style="height: 4rem; color: var(--color_verde)">
-          <path
-            d="M448 64H64C28.654 64 0 92.654 0 128V384C0 419.346 28.654 448 64 448H448C483.348 448 512 419.346 512 384V128C512 92.654 483.348 64 448 64ZM64 112H448C456.822 112 464 119.178 464 128V150.162L297.25 289.141C274.062 308.422 237.906 308.406 214.781 289.156L48 150.162V128C48 119.178 55.178 112 64 112ZM448 400H64C55.178 400 48 392.822 48 384V212.662L184.062 326.047C204.25 342.828 229.781 352.078 256 352.078S307.75 342.828 327.969 326.031L464 212.664V384C464 392.822 456.822 400 448 400Z"
-            fill="currentColor" />
-        </svg>
-
-        <h5>Envíeme un correo a</h5>
-
-        <p>
-          <a href="mailto:dan.nm9906@gmail.com">dan.nm9906@gmail.com</a><br />
-        </p>
+      <div
+        class="row section-intro"
+        style="min-width: 90vw; text-align: justify"
+      >
+        <div class="col-twelve">
+          <p class="lead">
+            El flujo de trabajo en cada servicio es el siguiente:
+          </p>
+          <ol>
+            <li>
+              Primer encuentro
+              <ul class="disc">
+                <li>Presentación de ambas partes.</li>
+                <li>Aproximación al tema.</li>
+              </ul>
+            </li>
+            <li>
+              Primera reunión formal
+              <ul class="disc">
+                <li>
+                  Presentación de los requisitos obtenidos por nuestra parte, a
+                  partir del primer encuentro.
+                </li>
+                <li>Discusión enrtre ambas partes sobre los requisitos.</li>
+                <li>Agregar, eliminar o editar requisitos de ser necesario.</li>
+                <li>Aprobación de los requisitos por parte del cliente.</li>
+                <li>Discusión del presupuesto del proyecto.</li>
+              </ul>
+            </li>
+            <li>
+              Segunda reunión formal
+              <ul class="disc">
+                <li>Presentación del plan de entregas.</li>
+                <li>Ajustes finales del plan de entregas y el presupuesto.</li>
+              </ul>
+            </li>
+            <li>
+              Desarrollo del proyecto
+              <ul class="disc">
+                <li>
+                  Al finalizar cada una de las etapas del plan de entregas se
+                  tendrá otro encuentro para mostrar los avances del proyecto y
+                  coordinar el pago definido para esta etapa.
+                </li>
+              </ul>
+            </li>
+            <li>
+              Entrega del proyecto
+              <ul class="disc">
+                <li>
+                  Cada proyecto se entregará con un manual de usuario de ser
+                  requerido.
+                </li>
+              </ul>
+            </li>
+            <li>
+              Soporte técnico
+              <ul class="disc">
+                <li>
+                  Será asesorado en cada momento de la puesta en marcha de su
+                  proyecto en un dominio y hosting adquirido por su cuenta.
+                </li>
+                <li>
+                  El período de soporte se extenderá a 5 meses después de la
+                  entrega oficial del proyecto, para extender el período se
+                  deberá contratar nuevamente.
+                </li>
+              </ul>
+            </li>
+            <li>
+              Mantenimiento
+              <ul class="disc">
+                <li>
+                  El período de mantenimiento se extenderá a 5 meses después de
+                  la entrega oficial del proyecto, para extender el período se
+                  deberá contratar nuevamente.
+                </li>
+              </ul>
+            </li>
+          </ol>
+        </div>
       </div>
+    </section>
+    <!-- /services -->
 
-      <div class="col-four tab-full">
-        <svg aria-hidden="true" focusable="false" data-prefix="fa-regular" data-icon="phone"
-          class="svg-inline--fa fa-phone fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
-          style="height: 4rem; color: var(--color_verde)">
-          <path
-            d="M480.298 320.251L382.098 278.173C360.692 268.892 335.459 275.064 320.897 293.126L293.46 326.626C248.68 300.876 211.166 263.376 185.416 218.627L218.962 191.143C236.868 176.518 243.055 151.44 233.977 130.096L191.729 31.534C181.573 8.331 156.386 -4.325 131.855 1.347L40.608 22.409C16.703 27.862 0 48.831 0 73.393C0 315.251 196.744 512 438.581 512C463.142 512 484.111 495.313 489.579 471.469L510.641 380.126C516.36 355.47 503.61 330.314 480.298 320.251ZM463.877 369.313L442.799 460.719C442.331 462.719 440.69 464 438.581 464C223.212 464 47.999 288.783 47.999 73.393C47.999 71.3 49.295 69.659 51.342 69.19L142.683 48.112C142.996 48.034 143.324 48.003 143.636 48.003C145.371 48.003 146.996 49.05 147.683 50.612L189.822 148.94C190.572 150.705 190.072 152.768 188.573 154.002L139.793 193.971C131.168 201.033 128.543 213.111 133.449 223.111C166.464 290.345 221.712 345.563 288.991 378.594C298.991 383.501 311.085 380.876 318.147 372.251L358.161 323.376C359.271 321.97 361.349 321.439 363.083 322.251L461.346 364.345C463.221 365.157 464.346 367.345 463.892 369.313H463.877Z"
-            fill="currentColor" />
-        </svg>
+    <!-- contact
+   ================================================== -->
+    <section id="contact">
+      <div class="row section-intro">
+        <div class="col-twelve">
+          <h5>Contacto</h5>
+          <h1>Me encantaría saber de usted.</h1>
 
-        <h5>Llámeme o escríbame al</h5>
-
-        <p>
-          Teléfono: <a href="tel:+5355794344">+5355794344</a><br />
-        </p>
+          <p class="lead">
+            Plantee su problema y será atendido vía correo electrónico.
+          </p>
+        </div>
       </div>
-    </div>
-    <!-- /contact-info -->
-  </section>
-  <!-- /contact -->
+      <!-- /section-intro -->
 
-  <!-- footer
+      <div class="row contact-form">
+        <div class="col-twelve">
+          <!-- form -->
+          <form
+            name="contactForm"
+            id="contactForm"
+            method="post"
+            action=""
+            style="display: block !important"
+          >
+            <fieldset>
+              <div class="form-field">
+                <input
+                  name="contactName"
+                  type="text"
+                  id="contactName"
+                  placeholder="Nombre"
+                  value=""
+                  minlength="2"
+                  required=""
+                />
+              </div>
+              <div class="form-field">
+                <input
+                  name="contactEmail"
+                  type="email"
+                  id="contactEmail"
+                  placeholder="Correo"
+                  value=""
+                  required=""
+                />
+              </div>
+              <div class="form-field">
+                <input
+                  name="contactSubject"
+                  type="text"
+                  id="contactSubject"
+                  placeholder="Asunto"
+                  value=""
+                />
+              </div>
+              <div class="form-field">
+                <textarea
+                  name="contactMessage"
+                  id="contactMessage"
+                  placeholder="Mensaje"
+                  rows="10"
+                  cols="50"
+                  required=""
+                  minlength="15"
+                ></textarea>
+              </div>
+              <div class="form-field">
+                <button class="submitform">Enviar</button>
+                <div id="submit-loader">
+                  <div class="text-loader">Enviando...</div>
+                  <div class="s-loader">
+                    <div class="bounce1"></div>
+                    <div class="bounce2"></div>
+                    <div class="bounce3"></div>
+                  </div>
+                </div>
+              </div>
+            </fieldset>
+          </form>
+          <!-- Form End -->
+
+          <!-- contact-warning -->
+          <div id="message-warning"></div>
+          <!-- contact-success -->
+          <div id="message-success">
+            Su mensaje ha sido enviado, muchas gracias.<br />
+          </div>
+        </div>
+        <!-- /col-twelve -->
+      </div>
+      <!-- /contact-form -->
+
+      <div class="row contact-info">
+        <div class="col-four tab-full">
+          <svg
+            aria-hidden="true"
+            focusable="false"
+            data-prefix="fa-regular"
+            data-icon="location-smile"
+            class="svg-inline--fa fa-location-smile fa-w-12"
+            role="img"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 384 512"
+            style="height: 4rem; color: var(--color_verde)"
+          >
+            <path
+              d="M192 0C86.375 0 0 86.375 0 192C0 268.75 25.625 291.25 172.75 502.375C177.625 508.75 184.75 512 192 512S206.375 508.75 211.25 502.375C358.375 291.25 384 268.75 384 192C384 86.375 297.625 0 192 0ZM192 446.125C177.625 425.5 164.5 407 152.625 390.125C58.375 256.5 48 240.25 48 192C48 112.625 112.625 48 192 48S336 112.625 336 192C336 240.25 325.625 256.5 231.375 390.125C219.5 407 206.375 425.5 192 446.125ZM136 176C149.25 176 160 165.25 160 152S149.25 128 136 128C122.75 128 112 138.75 112 152S122.75 176 136 176ZM248 176C261.25 176 272 165.25 272 152S261.25 128 248 128S224 138.75 224 152S234.75 176 248 176ZM237.999 227.25C214.75 253.625 169.25 253.625 145.999 227.25C137.25 217.25 121.999 216.375 112.125 225.125C102.125 233.875 101.25 249 109.999 259C130.75 282.5 160.75 296 192 296C223.375 296 253.25 282.5 273.999 259C282.75 249 281.75 233.875 271.875 225.125C261.999 216.375 246.75 217.25 237.999 227.25Z"
+              fill="currentColor"
+            />
+          </svg>
+
+          <h5>Donde encontrarme</h5>
+
+          <p>
+            Pío Álvarez #148<br />
+            Máximo Gómez, Perico<br />
+            Matanzas, Cuba
+          </p>
+        </div>
+
+        <div class="col-four tab-full collapse">
+          <svg
+            aria-hidden="true"
+            focusable="false"
+            data-prefix="fa-regular"
+            data-icon="envelope"
+            class="svg-inline--fa fa-envelope fa-w-16"
+            role="img"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 512 512"
+            style="height: 4rem; color: var(--color_verde)"
+          >
+            <path
+              d="M448 64H64C28.654 64 0 92.654 0 128V384C0 419.346 28.654 448 64 448H448C483.348 448 512 419.346 512 384V128C512 92.654 483.348 64 448 64ZM64 112H448C456.822 112 464 119.178 464 128V150.162L297.25 289.141C274.062 308.422 237.906 308.406 214.781 289.156L48 150.162V128C48 119.178 55.178 112 64 112ZM448 400H64C55.178 400 48 392.822 48 384V212.662L184.062 326.047C204.25 342.828 229.781 352.078 256 352.078S307.75 342.828 327.969 326.031L464 212.664V384C464 392.822 456.822 400 448 400Z"
+              fill="currentColor"
+            />
+          </svg>
+
+          <h5>Envíeme un correo a</h5>
+
+          <p>
+            <a href="mailto:dan.nm9906@gmail.com">dan.nm9906@gmail.com</a><br />
+          </p>
+        </div>
+
+        <div class="col-four tab-full">
+          <svg
+            aria-hidden="true"
+            focusable="false"
+            data-prefix="fa-regular"
+            data-icon="phone"
+            class="svg-inline--fa fa-phone fa-w-16"
+            role="img"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 512 512"
+            style="height: 4rem; color: var(--color_verde)"
+          >
+            <path
+              d="M480.298 320.251L382.098 278.173C360.692 268.892 335.459 275.064 320.897 293.126L293.46 326.626C248.68 300.876 211.166 263.376 185.416 218.627L218.962 191.143C236.868 176.518 243.055 151.44 233.977 130.096L191.729 31.534C181.573 8.331 156.386 -4.325 131.855 1.347L40.608 22.409C16.703 27.862 0 48.831 0 73.393C0 315.251 196.744 512 438.581 512C463.142 512 484.111 495.313 489.579 471.469L510.641 380.126C516.36 355.47 503.61 330.314 480.298 320.251ZM463.877 369.313L442.799 460.719C442.331 462.719 440.69 464 438.581 464C223.212 464 47.999 288.783 47.999 73.393C47.999 71.3 49.295 69.659 51.342 69.19L142.683 48.112C142.996 48.034 143.324 48.003 143.636 48.003C145.371 48.003 146.996 49.05 147.683 50.612L189.822 148.94C190.572 150.705 190.072 152.768 188.573 154.002L139.793 193.971C131.168 201.033 128.543 213.111 133.449 223.111C166.464 290.345 221.712 345.563 288.991 378.594C298.991 383.501 311.085 380.876 318.147 372.251L358.161 323.376C359.271 321.97 361.349 321.439 363.083 322.251L461.346 364.345C463.221 365.157 464.346 367.345 463.892 369.313H463.877Z"
+              fill="currentColor"
+            />
+          </svg>
+
+          <h5>Llámeme o escríbame al</h5>
+
+          <p>Teléfono: <a href="tel:+5355794344">+5355794344</a><br /></p>
+        </div>
+      </div>
+      <!-- /contact-info -->
+    </section>
+    <!-- /contact -->
+
+    <!-- footer
    ================================================== -->
 
-  <footer>
-    <div class="row">
-      <div class="col-four tab-full pull-right social">
-        <ul class="footer-social">
-          <li>
-            <a href="https://www.facebook.com/daniel.navarromachin/" target="_blank">
-              <svg aria-hidden="true" focusable="false" data-prefix="fa-brands" data-icon="facebook-f"
-                class="svg-inline--fa fa-facebook-f fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 320 512" style="height: 2.5rem;">
-                <path
-                  d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"
-                  fill="currentColor" />
-              </svg>
-            </a>
-          </li>
-          <li>
-            <a href="https://twitter.com/dnm_justMe" target="_blank">
-              <svg aria-hidden="true" focusable="false" data-prefix="fa-brands" data-icon="twitter"
-                class="svg-inline--fa fa-twitter fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 512 512" style="height: 2.5rem;">
-                <path
-                  d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"
-                  fill="currentColor" />
-              </svg>
-            </a>
-          </li>
-          <li>
-            <a href="https://www.instagram.com/dnm_justme/" target="_blank">
-              <svg aria-hidden="true" focusable="false" data-prefix="fa-brands" data-icon="instagram"
-                class="svg-inline--fa fa-instagram fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 448 512" style="height: 2.5rem;">
-                <path
-                  d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
-                  fill="currentColor" />
-              </svg>
-            </a>
-          </li>
-          <li>
-            <a href="https://github.com/dnmJustMe" target="_blank">
-              <svg aria-hidden="true" focusable="false" data-prefix="fa-brands" data-icon="github"
-                class="svg-inline--fa fa-github fa-w-15.5" role="img" xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 496 512" style="height: 2.5rem;">
-                <path
-                  d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"
-                  fill="currentColor" />
-              </svg>
-            </a>
-          </li>
-          <li>
-            <a href="https://api.whatsapp.com/send?phone=5355794344" target="_blank">
-              <svg aria-hidden="true" focusable="false" data-prefix="fa-brands" data-icon="whatsapp"
-                class="svg-inline--fa fa-whatsapp fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 448 512" style="height: 2.5rem;">
-                <path
-                  d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"
-                  fill="currentColor" />
-              </svg>
-            </a>
-          </li>
-        </ul>
-      </div>
+    <footer>
+      <div class="row">
+        <div class="col-four tab-full pull-right social">
+          <ul class="footer-social">
+            <li>
+              <a
+                href="https://www.facebook.com/daniel.navarromachin/"
+                target="_blank"
+              >
+                <svg
+                  aria-hidden="true"
+                  focusable="false"
+                  data-prefix="fa-brands"
+                  data-icon="facebook-f"
+                  class="svg-inline--fa fa-facebook-f fa-w-10"
+                  role="img"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 320 512"
+                  style="height: 2.5rem"
+                >
+                  <path
+                    d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://twitter.com/dnm_justMe" target="_blank">
+                <svg
+                  aria-hidden="true"
+                  focusable="false"
+                  data-prefix="fa-brands"
+                  data-icon="twitter"
+                  class="svg-inline--fa fa-twitter fa-w-16"
+                  role="img"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 512 512"
+                  style="height: 2.5rem"
+                >
+                  <path
+                    d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/dnm_justme/" target="_blank">
+                <svg
+                  aria-hidden="true"
+                  focusable="false"
+                  data-prefix="fa-brands"
+                  data-icon="instagram"
+                  class="svg-inline--fa fa-instagram fa-w-14"
+                  role="img"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 448 512"
+                  style="height: 2.5rem"
+                >
+                  <path
+                    d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/dnmJustMe" target="_blank">
+                <svg
+                  aria-hidden="true"
+                  focusable="false"
+                  data-prefix="fa-brands"
+                  data-icon="github"
+                  class="svg-inline--fa fa-github fa-w-15.5"
+                  role="img"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 496 512"
+                  style="height: 2.5rem"
+                >
+                  <path
+                    d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://api.whatsapp.com/send?phone=5355794344"
+                target="_blank"
+              >
+                <svg
+                  aria-hidden="true"
+                  focusable="false"
+                  data-prefix="fa-brands"
+                  data-icon="whatsapp"
+                  class="svg-inline--fa fa-whatsapp fa-w-14"
+                  role="img"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 448 512"
+                  style="height: 2.5rem"
+                >
+                  <path
+                    d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
 
-      <div class="col-eight tab-full">
-        <div class="copyright">
-          <span>© Copyright 2023 </span>
-          <span>Daniel Navarro Machín</span>
+        <div class="col-eight tab-full">
+          <div class="copyright">
+            <span>© Copyright 2023 </span>
+            <span>Daniel Navarro Machín</span>
+          </div>
+        </div>
+
+        <div id="go-top">
+          <a class="smoothscroll" title="Volver al inicio" href="#top">
+            <svg
+              aria-hidden="true"
+              focusable="false"
+              data-prefix="fa-solid"
+              data-icon="arrow-up"
+              class="svg-inline--fa fa-arrow-up fa-w-14"
+              role="img"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 448 512"
+              style="height: 2.5rem"
+            >
+              <path
+                d="M413 251.562C405.14 259.812 394.578 264 384 264C374.093 264 364.187 260.344 356.453 253L264 165.18V440C264 462.094 246.093 480 224 480S184 462.094 184 440V165.18L91.547 253C75.562 268.188 50.234 267.531 35 251.562C19.781 235.531 20.437 210.219 36.453 195L196.453 43C211.89 28.312 236.109 28.312 251.547 43L411.547 195C427.562 210.219 428.218 235.531 413 251.562Z"
+                fill="currentColor"
+              />
+            </svg>
+          </a>
         </div>
       </div>
+      <!-- /row -->
+    </footer>
 
-      <div id="go-top">
-        <a class="smoothscroll" title="Volver al inicio" href="#top">
-          <svg aria-hidden="true" focusable="false" data-prefix="fa-solid" data-icon="arrow-up"
-            class="svg-inline--fa fa-arrow-up fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 448 512" style="height: 2.5rem;">
-            <path
-              d="M413 251.562C405.14 259.812 394.578 264 384 264C374.093 264 364.187 260.344 356.453 253L264 165.18V440C264 462.094 246.093 480 224 480S184 462.094 184 440V165.18L91.547 253C75.562 268.188 50.234 267.531 35 251.562C19.781 235.531 20.437 210.219 36.453 195L196.453 43C211.89 28.312 236.109 28.312 251.547 43L411.547 195C427.562 210.219 428.218 235.531 413 251.562Z"
-              fill="currentColor" />
-          </svg>
-        </a>
-      </div>
+    <div id="preloader">
+      <div id="loader"></div>
     </div>
-    <!-- /row -->
-  </footer>
 
-  <div id="preloader">
-    <div id="loader"></div>
-  </div>
-
-
-  <script src="js/jquery-2.1.3.min.js"></script>
-  <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
-  <script src="lang/lang.js"></script>
-  <script>
-    console.log(Object.keys(es)[0])
-  </script>
-</body>
-
+    <script src="js/jquery-2.1.3.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+  </body>
 </html>

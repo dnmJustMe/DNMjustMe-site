@@ -1,3 +1,0 @@
-const es = {
-    bienvenida : "Hola"
-}
