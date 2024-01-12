@@ -286,7 +286,7 @@
 
 
   async function change_languaje(lang) {
-    const URL = "../lang/" + lang + ".json";
+    const URL = "https://dnmjustme.github.io/DNMjustMe-site/lang/" + lang + ".json";
 
     try {
       const response = await fetch(URL);
