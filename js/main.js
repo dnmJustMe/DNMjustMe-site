@@ -192,7 +192,7 @@
             }, 5000);
           }
           console.log(msg["responseText"]);*/
-		mensaje = JSON.parse(msg)
+		var mensaje = JSON.parse(msg)
 		console.log(mensaje["ok"])
         },
         error: function (msg) {
