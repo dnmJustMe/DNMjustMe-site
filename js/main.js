@@ -192,7 +192,8 @@
             }, 5000);
           }
           console.log(msg["responseText"]);*/
-		console.log(msg)
+		mensaje = JSON.parse(msg)
+		console.log(mensaje["ok"])
         },
         error: function (msg) {
           sLoader.fadeOut();
