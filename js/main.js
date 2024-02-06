@@ -191,7 +191,6 @@
               $("#message-warning").fadeOut();
             }, 5000);
           }
-          console.log(msg["responseText"]);
         },
         error: function (msg) {
           sLoader.fadeOut();
