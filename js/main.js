@@ -173,7 +173,7 @@
         },
         success: function (msg) {
           // Message was sent
-        /*if (msg == "OK") {
+        if (JSON.parse(msg)) {
             sLoader.fadeOut();
             $("#message-warning").hide();
             $("#message-success").fadeIn();
@@ -191,8 +191,7 @@
               $("#message-warning").fadeOut();
             }, 5000);
           }
-          console.log(msg["responseText"]);*/
-		console.log(JSON.parse(msg))
+          console.log(msg["responseText"]);
         },
         error: function (msg) {
           sLoader.fadeOut();
